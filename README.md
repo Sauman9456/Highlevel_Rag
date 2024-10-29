@@ -56,10 +56,12 @@ The RAG system provides responses in the following format:
 }
 ```
 
+![Flowchart](flowchart.svg)
+
 ## Getting Started
 
 ### Prerequisites
-- Python 3.7+
+- Python 3.10.x
 - `requirements.txt` contains all necessary libraries (install with `pip install -r requirements.txt`).
 - API keys for OpenAI and Cohere (add these keys to your environment).
 
