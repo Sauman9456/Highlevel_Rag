@@ -1,0 +1,1224 @@
+[
+    {
+        "query": "I suspect a phone number in our client's sub account is going to spam. I was doing bunch of research on how to remediate it and came across couple helpful steps and one of them was:\\n\\ngetting \"A\" attestation for your phone number and the video mentioned talking to your phone provider ",
+        "answer": "To remediate a phone number that is being marked as spam, you can follow these steps:\n\n1. **Register on Free Caller Registry**: This is a centralized procedure that allows entities to submit their data to the three major U.S. wireless carriers' service providers. By registering your phone number on the [Free Caller Registry](https://www.freecallerregistry.com/fcr/), you can potentially remove the 'spam likely' label from your number. This process is specifically for U.S. phone numbers. If the number is critical and cannot be replaced, this registration is recommended. Within three to five days of submission, you should receive confirmation emails from the providers responsible for updating all U.S.-based carriers.\n\n2. **Contact Your Phone Provider**: If the phone number is still marked as spam after registration, you may need to contact your phone provider. They can assist in getting \"A\" attestation for your phone number, which can help improve its reputation and reduce the likelihood of it being marked as spam.\n\n3. **Consider Replacing the Number**: If the phone number is relatively new or not critical to your business, it might be easier to replace it with a new one rather than trying to remediate the spam label.\n\nThese steps should help in addressing the issue of a phone number being marked as spam. If further assistance is needed, contacting the phone provider directly can provide additional support.",
+        "citation": [
+            {
+                "title": "Recommendations and Best Practices for Maintaining a Positive Caller Reputation",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002944"
+            },
+            {
+                "title": "Why are my Calls marked as Spam, and how can I avoid it (LC Phone)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001231665"
+            },
+            {
+                "title": "How To Reduce 'Spam Likely' by Registering your Numbers on Free Caller Registry",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001557"
+            },
+            {
+                "title": "Remediate 'Spam Likely' on your Caller ID using Free Caller Registry",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002883"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001231665"
+    },
+    {
+        "query": "I just have a few questions,\\nregarding the phone numbers the client has bought..\\n1. is the $12 campaign fee payment a monthly payment?\\n2. do the numbers we send the text from need to be verified before we can test the leads in the client's subaccount?\\n3. how can we record incoming and outgoing calls for the numbers?\\n4. the verification for the numbers - how long does it usually take?",
+        "answer": "1. **Is the $12 campaign fee payment a monthly payment?**\n   - Yes, the $12 campaign fee is a monthly recurring fee for the Standard campaign use case. \n\n2. **Do the numbers we send the text from need to be verified before we can test the leads in the client's subaccount?**\n   - Yes, toll-free numbers need to be verified before they can be used to send messages to the US and Canada. Unverified numbers will be blocked from sending messages starting November 8, 2023.\n\n3. **How can we record incoming and outgoing calls for the numbers?**\n   - Call recording can be enabled in the settings under the voice calls tab. This feature allows automatic transcription of recorded calls, which can be integrated into the conversation page for easy access.\n\n4. **The verification for the numbers - how long does it usually take?**\n   - The verification process for toll-free numbers can take up to 4 to 6 weeks to complete, although approval can sometimes occur in as little as two days.",
+        "citation": [
+            {
+                "title": "Toll-Free Verification Guide for LC - Phone (US/Canada)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001222300"
+            },
+            {
+                "title": "US Phone Number Registrations",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002380"
+            },
+            {
+                "title": "How to Enable Call Transcriptions for Recorded Calls",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002841"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001229976"
+    },
+    {
+        "query": "how to provide twilio to users after connecting to lead connector",
+        "answer": "To provide Twilio to users after connecting to LeadConnector, follow these steps:\n\n1. **Purchase a Twilio Phone Number:**\n   - Go to location Settings > Phone numbers > Click on Add Number.\n\n2. **Assign the Twilio Number to a User:**\n   - Go to My Staff > Team Management > Edit the user you want to assign the number to.\n   - Expand Call & Voicemail Settings.\n   - Click on the dropdown to select the Twilio Number you bought for the user.\n\n3. **Initiate Calls and SMS with Assigned Twilio Number:**\n   - Use the assigned Twilio number to initiate calls and SMS by adding a workflow action \"Assign to user\" so the contact will be assigned to the user.\n\n4. **Custom Values in Workflow:**\n   - Use custom values in the workflow when sending SMS/email, such as:\n     - User > Twilio Phone: {{user.twilio_phone_number}}\n     - User > Twilio Phone raw format: {{user.twilio_phone_number_raw}}\n\nBy following these steps, you can effectively assign and manage Twilio numbers for users within the LeadConnector system.",
+        "citation": [
+            {
+                "title": "How to Assign Twilio Phone Numbers to Users",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001152124"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001240107"
+    },
+    {
+        "query": "My client would like to port out their LC phone numbers and they need this info: Business name \\nBilling address \\nAccount number \\nPIN number if availabl",
+        "answer": "To port out LC phone numbers, the following information is typically required:\n\n1. **Business Name**: Enter the business name or the individual's name as it appears on the telephone bill.\n\n2. **Billing Address**: Provide the service address on file with your current carrier. This must be a physical location and cannot be a PO Box.\n\n3. **Account Number**: List all the telephone numbers you authorize to change from your current phone service provider to Twilio Inc.\n\n4. **PIN Number**: If applicable, provide the PIN or the last 4 digits of the SSN associated with the account.\n\nThese details are necessary to complete the porting process to Twilio or another service provider.",
+        "citation": [
+            {
+                "title": "Porting your telephone number (non-Twilio number) to a location",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001211919"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001240107"
+    },
+    {
+        "query": "a2p campaign rejection",
+        "answer": "To address A2P campaign rejection, follow these steps:\n\n1. **Identify the Rejection Reason**: \n   - Check the specific reason for rejection in the Trust Center tab by clicking on \"Failed\" to review the Campaign Failure Reason. TCR often rejects a campaign based on the first issue they encounter, so it's important to review the entire campaign submission and the client\u2019s website to ensure everything is correct and compliant.\n\n2. **Common Rejection Reasons and Solutions**:\n   - **Opt-In Information**: Ensure that the opt-in message workflow meets the requirements for the specific campaign type. Provide necessary links and documentation, include a privacy policy and terms of service, and avoid sharing opt-in information with unauthorized third parties.\n   - **Unverifiable Website**: Verify that the provided website(s) are functioning correctly and accessible. If the registration is for a pre-launch website, include a publicly accessible URL to view a screenshot of the SMS opt-in flow.\n   - **Incorrect Sole Prop Brand Registration**: Verify the accuracy and completeness of the registration information for the Sole Proprietorship Brand. Ensure that the brand meets the criteria defined by TCR and mobile carriers for Sole Proprietor (EIN) registration.\n   - **Inconsistencies Between Sample Message and Use-Case**: Ensure that the sample messages are accurate, detailed, and reflective of the actual messages to be sent under the campaign. Indicate templated fields within sample messages using brackets.\n\n3. **Review and Resubmit**: Once you have made the necessary changes to address the issue, resubmit the campaign for review.\n\n4. **Contact Support**: If the campaign cannot be approved due to an unknown error, contact Customer Support for assistance in understanding the underlying problem and finding a resolution.",
+        "citation": [
+            {
+                "title": "A2P 10DLC Campaign Approval Best Practices",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001229784"
+            },
+            {
+                "title": "Fixing Failed Number Registrations (A2P Local and Toll-Free)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001454"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000000508"
+    },
+    {
+        "query": "Switch them from LC Phone to Twilio",
+        "answer": "To switch from LC Phone to Twilio, follow these steps:\n\n1. **Disable LC Phone for Sub-Accounts:**\n   - Unfortunately, there is no bulk solution for removing LC Phone from existing sub-accounts. Each sub-account must be manually disabled one by one.\n   - Submit the [Disable LC Phone Form](https://link.gohighlevel.com/widget/form/ItLl5XOY2IQcSI8iDkiR) to disable LC Phone for a sub-account.\n\n2. **Keep Phone Numbers:**\n   - Before disabling LC Phone, if you want to keep the phone numbers, you need to move them out of the LC Phone sub-account to your own Twilio account. Follow the process outlined in [Moving numbers out of an LC Phone Sub-account to the client's own Twilio account](https://help.gohighlevel.com/en/support/solutions/articles/48001240107).\n\n3. **Twilio Account Setup:**\n   - Create your own Twilio account and obtain the Account SID and Auth Token.\n   - Use these credentials to replace the existing ones in the sub-account settings.\n\n4. **Submit the Form:**\n   - Once Twilio support confirms the number has been moved, submit the Disable LC Phone Form to finalize the process.\n\nThis process, once completed, is irreversible, and all phone numbers currently in these sub-accounts will be released if not moved beforehand.",
+        "citation": [
+            {
+                "title": "How to Disable LC Phone System for your Agency",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001231698"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001240107"
+    },
+    {
+        "query": "Porting a number out of High level",
+        "answer": "To port a Canadian phone number out of HighLevel, follow these steps:\n\n1. **Prepare Required Information:**\n   - Ensure you have the number(s) to be ported in E164 format (e.g., [+][1][xxx][xxx][xxxx]).\n   - Obtain the Twilio Canadian Letter Of Authorization within the last 15 days.\n   - Have your most recent billing document ready.\n   - Know your Customer Account Number as recorded by your current carrier.\n\n2. **Submit Porting Request:**\n   - Fill out the Twilio porting form available at [Twilio's International Porting page](https://twlo.my.salesforce-sites.com/InternationalPorting).\n\n3. **Porting Timeline:**\n   - The process typically takes between 4 to 6 weeks depending on the losing carrier.\n\n4. **Porting Fee:**\n   - A one-time porting fee of $7.00 USD per number is charged.\n\nEnsure all the information is accurate and submitted as required to facilitate a smooth porting process.",
+        "citation": [
+            {
+                "title": "Porting your telephone number (non-Twilio number) to a location",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001211919"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001240107"
+    },
+    {
+        "query": "I am trying to set up a dedicated domain but I am having great difficulty getting it all resolved",
+        "answer": "To set up a dedicated sending domain, follow these steps:\n\n1. **Navigate to Settings:**\n   - Go to **Settings** > **Email Services** in your sub-account.\n\n2. **Add Domain:**\n   - Click on **Dedicated Domain** and then **+ Add Domain**.\n   - Enter your domain name and click **Add & Verify**.\n\n3. **DNS Records Setup:**\n   - You will need to add specific DNS records to your domain's DNS settings. These typically include TXT, CNAME, and MX records.\n   - For example, for GoDaddy, you need to add:\n     - TXT Record: `v=spf1 include:mailgun.org ~all`\n     - CNAME Record: Points to `mailgun.org`\n     - MX Records: `mxa.mailgun.org` and `mxb.mailgun.org`\n   - Follow the specific instructions for your DNS provider (e.g., GoDaddy, Google Domains, Siteground).\n\n4. **Verify Domain:**\n   - After adding the DNS records, go back to the Email Services tab and click **Verify Domain**.\n   - It might take some time for DNS changes to propagate, so be patient.\n\n5. **Troubleshooting:**\n   - If verification fails, double-check the DNS records for accuracy.\n   - Use tools like MX Toolbox to verify DNS propagation.\n   - Ensure there are no duplicate records or incorrect configurations.\n\n6. **Additional Tips:**\n   - Use a subdomain for better deliverability.\n   - If using a service like Google Workspace, ensure you are not conflicting with existing email services.\n\nIf you continue to face issues, consider reaching out to your DNS provider's support or HighLevel support for further assistance.",
+        "citation": [
+            {
+                "title": "LC Email Dedicated Sending Domains",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001226115"
+            },
+            {
+                "title": "Email Sending Guide: Email Best Practices & Email Warm Up",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001021"
+            },
+            {
+                "title": "Setting up Whitelabel Domain, API Domain, Email Sending Domain, Sites Domain, Client Portal Domain & more",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002561"
+            },
+            {
+                "title": "GoDaddy Dedicated Sending Domain Setu (LC Email)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001237513"
+            },
+            {
+                "title": "Deleting Your LC Email Sending Domain",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000003212"
+            },
+            {
+                "title": "How to Add a Domain and Verify DNS Record",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002220"
+            },
+            {
+                "title": "Google Dedicated Sending Domain Setup (LC Email)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001240481"
+            },
+            {
+                "title": "Siteground Dedicated Sending Domain Setup (LC Email)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000000568"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002220"
+    },
+    {
+        "query": "a sub account needs to transfer their exciting phone number to their new high level account they created on their own",
+        "answer": "To transfer an existing phone number from a sub-account to a new HighLevel account, follow these steps:\n\n1. **Identify the Current Setup:**\n   - Determine if the phone number is currently associated with a Twilio account or LeadConnector (LC) Phone System.\n\n2. **For Twilio Accounts:**\n   - If the phone number is under a Twilio account, you need to move it to the new sub-account in your Twilio account.\n   - Gather the following information:\n     - Phone Number(s) to be moved.\n     - Losing Account SID (the current sub-account's SID).\n     - Gaining Account SID (the new sub-account's SID).\n   - Create a support ticket with Twilio support, providing the above details and request the transfer.\n   - Both the losing and gaining account owners need to submit tickets to Twilio for approval.\n\n3. **For LC Phone System:**\n   - If the number is under LC Phone, you need to move it to the new HighLevel account.\n   - Provide the Location ID to HighLevel support to identify the ISV account's Account SID.\n   - Create a support ticket with Twilio support, CCing migration@leadconnectorhq.com for approval.\n   - Follow the instructions to move the number to the new sub-account.\n\n4. **Post-Transfer Setup:**\n   - Once the transfer is confirmed, update the credentials in the HighLevel account settings to reflect the new SID and Auth Token.\n   - Ensure all necessary configurations are updated in the new HighLevel account.\n\n5. **Contact Support if Needed:**\n   - If there are any issues or additional assistance is required, contact HighLevel support for guidance.\n\nThis process ensures that the phone number is successfully transferred to the new HighLevel account while maintaining all necessary configurations.",
+        "citation": [
+            {
+                "title": "Sub-Account Transfers: Transfer Sub-account to an Existing Agency",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002031"
+            },
+            {
+                "title": "Moving Numbers tool across sub-accounts",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001203968"
+            },
+            {
+                "title": "Sub Account Transfers : Eject Sub-Account to a New Agency",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000003465"
+            },
+            {
+                "title": "Enabling Twilio Rebilling For Customers Who Want Use Their Own Twilio Account",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001178719"
+            },
+            {
+                "title": "Import Existing Twilio Numbers into HighLevel",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48000981421"
+            },
+            {
+                "title": "Move Numbers From One Twilio Account To Another",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001177283"
+            },
+            {
+                "title": "Moving numbers out of an LC Phone Sub-account to the client's own Twilio account",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001240107"
+            },
+            {
+                "title": "Moving numbers to an LC Phone Sub-account from the client's own Twilio account",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001240108"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001211919"
+    },
+    {
+        "query": "Domain Issues",
+        "answer": "There is no answer available",
+        "citation": [
+            {
+                "title": "Setting up Whitelabel Domain, API Domain, Email Sending Domain, Sites Domain, Client Portal Domain & more",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002561"
+            },
+            {
+                "title": "How to set up Root Domain/Subdomain for your Funnels/Websites?",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001153720"
+            },
+            {
+                "title": "SSL Certificates for Dedicated LC Email Domains",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001227438"
+            },
+            {
+                "title": "How to Add a Domain and Verify DNS Record",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002220"
+            },
+            {
+                "title": "When email replies are not showing up in Conversation",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001185819"
+            },
+            {
+                "title": "Email Error Library for supported SMTPs",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001209322"
+            },
+            {
+                "title": "Email Sending Guide: Email Best Practices & Email Warm Up",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001021"
+            },
+            {
+                "title": "Siteground Dedicated Sending Domain Setup (LC Email)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000000568"
+            },
+            {
+                "title": "How to use the Domain Connect feature?",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000000734"
+            },
+            {
+                "title": "LC Email Dedicated Sending Domains",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001226115"
+            },
+            {
+                "title": "Facebook Troubleshooting - Integration Issues",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48000981698"
+            },
+            {
+                "title": "Mailgun Setup - Siteground Domain Setup",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48000981685"
+            },
+            {
+                "title": "How to add an Additional Domain for WordPress site",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001219237"
+            },
+            {
+                "title": "Mailgun Setup - Google Domain Setup",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001155148"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002220"
+    },
+    {
+        "query": "Need to add a service calendar to a funnel",
+        "answer": "To add a service calendar to a funnel, follow these steps:\n\n1. **Access Calendar Settings:**\n   - Go to \"Calendars\" > \"Calendar Settings\" in your HighLevel account.\n\n2. **Get the Embed Code:**\n   - For the specific calendar you want to embed, click the \"three dots\" icon next to it and select \"Share.\"\n   - In the pop-up modal, select the \"Embed Code\" tab and click \"Copy\" to copy the embed code.\n\n3. **Embed the Code in Your Funnel:**\n   - Paste the copied embed code into a custom code element on your funnel page. This can be done by adding a \"Custom JS/HTML\" element in the funnel page builder and pasting the code there.\n\nNote: If you are embedding a HighLevel Calendar in a funnel or website page within HighLevel, you can use the Calendar element in the page builder. This element allows you to choose the calendar you'd like to display and automatically inserts it without needing to manually add an embed code.",
+        "citation": [
+            {
+                "title": "Embedding HighLevel Calendars using HTML Code",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48000982201"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48000982201"
+    },
+    {
+        "query": "Somehow we've lost a contact and all their corresponding messages and recordings. I'm only able to go back 60 days in the audit logs.",
+        "answer": "To restore a deleted contact and its corresponding messages and recordings, you can follow these steps:\n\n1. **Access the Audit Logs**: Go to the 'Settings' on the sidebar menu and click on 'Audit Logs'.\n\n2. **Filter Deleted Contacts**: Use the action filter on the top right to select \"Deleted\" and the module filter to select \"Contacts\". This will show you all the deleted contacts within the last 60 days.\n\n3. **Restore the Contact**: For the contact you want to restore, click on the 3 dots icon on the right and select the option to restore the contact. This will restore the contact along with its associated data, such as messages and recordings, if they were deleted within the 60-day window.\n\nPlease note that the restoration is only possible within 60 days of deletion, as per the audit log retention policy.",
+        "citation": [
+            {
+                "title": "Deleting and Restoring Opportunities",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002041"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001211386"
+    },
+    {
+        "query": "where will i see if my customers have booked a meeting with me",
+        "answer": "To see if your customers have booked a meeting with you, you can use the **Appointment List View** in the Calendars. This view provides a centralized place to view and manage all your appointments across multiple calendars. It displays all, upcoming, and cancelled appointments, allowing you to take necessary actions and stay on top of your schedule. You can also customize the view to include specific fields and use advanced filters to navigate and manage your appointments effectively.",
+        "citation": [
+            {
+                "title": "Appointment List View in Calendars (Smart List)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000003447"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000001202"
+    },
+    {
+        "query": "sender domain error",
+        "answer": "To address a sender domain error, you can follow these steps:\n\n1. **Verify MX Records:** Ensure that the necessary MX records for the sending domain are correctly configured. If you're using a subdomain, set the MX records to Mailgun values (mxa.mailgun.org and mxb.mailgun.org) and wait 24-48 hours for propagation.\n\n2. **Check DNS Entries:** Make sure your domain has the required DNS/MX entries. If the root domain doesn't have MX records, add the root domain to your Mailgun account and verify the required TXT and MX records.\n\n3. **Sender Address Verification:** If the error persists, consider turning off sender address verification on the server side with your email provider or create a \"catch-all\" within the configuration of your email provider.\n\n4. **Contact Support:** If the domain is terminated or if there are persistent issues, contact Mailgun support for further assistance.\n\nThese steps should help resolve sender verification errors and ensure proper email delivery. \n\nFor more detailed guidance, refer to the [Mailgun article](https://help.mailgun.com/hc/en-us/articles/360011804533-Sender-Verification-Error).",
+        "citation": [
+            {
+                "title": "Email Error Library for supported SMTPs",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001209322"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002220"
+    },
+    {
+        "query": "i would like to know how to add webhooks to an automation and how much it costs",
+        "answer": "To add webhooks to an automation in HighLevel, follow these steps:\n\n1. **Choose the Action Type:**\n   - Select \"Webhook\" from the list of available actions in the workflow builder.\n\n2. **Name Your Action:**\n   - Enter a descriptive name for the action, such as \"Send Contact Info to External CRM.\"\n\n3. **Enter the Webhook URL:**\n   - Provide the URL of the external application where the data should be sent. This is typically an endpoint URL provided by third-party systems like CRMs, email marketing tools, or other APIs.\n\n4. **Configure Payload:**\n   - Define the data that will be sent through the webhook using JSON format. You can use merge fields to dynamically pull in information like contact details, opportunity status, or custom fields.\n\n5. **Add Headers (Optional):**\n   - If the external system requires authentication or specific headers, you can add them here.\n\n6. **Test Webhook (Optional):**\n   - Before finalizing, you can use testing tools like Webhook.site or Postman to verify that the data is being sent correctly to the external system.\n\nRegarding the cost, agencies on any plan ($97, $970, $297, $2970, $497, $4970) can access LC Premium Triggers & Actions. Once Premium Actions & Triggers are enabled via the Agency settings, existing and new sub-accounts will have 100 free executions. For agencies to avoid accruing execution costs for existing sub-accounts, rebilling will need to be enabled manually for each sub-account within the Agency view. If premium actions are enabled on the SaaS Configurator, new sub-accounts generated will automatically be enrolled in LC Premium Actions & Triggers, with no further action required by the agency.",
+        "citation": [
+            {
+                "title": "How to Use Webhooks in HighLevel (Zapier)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001183"
+            },
+            {
+                "title": "How to enable and rebill LC Premium Triggers & Actions for Workflows",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001231559"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001231559"
+    },
+    {
+        "query": "I'm sending an automated email from the clients Gmail address. When their potential customers reply to the email it's going to a msgsndr.com email address. I want them to go through to him",
+        "answer": "To ensure that replies to automated emails sent from a client's Gmail address go directly to the client's email rather than a msgsndr.com email address, follow these steps:\n\n1. **Set Up Mailgun:**\n   - Ensure that Mailgun is set up correctly for the client's domain. This involves creating a subdomain for the client's domain and configuring it in Mailgun.\n   - Make sure the Mailgun domain is configured for only one sub-account to ensure that replies are routed correctly.\n\n2. **Configure the Reply-To Address:**\n   - When sending emails, ensure that the reply-to address is set to the client's email address. This can be done by configuring the sender's email settings in the email service you are using.\n\n3. **Check Mailgun Domain Configuration:**\n   - Verify that the Mailgun domain is set up correctly in the HighLevel settings under the sub-account's email services.\n\nBy following these steps, replies to the automated emails should be directed to the client's email address instead of a msgsndr.com address. This setup ensures that the email replies are captured correctly in the client's email system.",
+        "citation": [
+            {
+                "title": "Cold Email Inbound Setup Mailgun",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001185801"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001184605"
+    },
+    {
+        "query": "My Dedicated email isn't sending or working.",
+        "answer": "To troubleshoot issues with your dedicated email not sending or working, follow these steps:\n\n1. **Verify Domain DNS Integration:**\n   - Ensure that the domain DNS records were correctly added to the provider where the domain Nameservers are pointing. Use a tool like MX Toolbox to verify the hosting provider and that the records are propagating the correct data. If the Nameservers are managed by a different provider, integrate the HighLevel records into the DNS of that provider. \n\n2. **Check MX Records:**\n   - The MX record is essential for tracking replies. Use MX Toolbox to look up the MX record for your domain or subdomain. Ensure that the records point to the correct mail servers, such as mxa.mailgun.org and mxb.mailgun.org, if using Mailgun. If other records point to different email servers, you may need to set up a subdomain for Mailgun or not use the domain for other email servers.\n\n3. **Check Email Deliverability Settings:**\n   - Ensure that your dedicated sending domain is set up correctly. This includes verifying that all DNS records are correctly configured and that the domain is verified. If you are using LC Email, make sure the dedicated domain is active and properly configured.\n\n4. **Troubleshoot Common Issues:**\n   - If emails are not being sent, check if there are any issues with the email service provider or if there are any server downtimes. Also, ensure that the email settings in your platform are correctly configured.\n\n5. **Seek Additional Assistance:**\n   - If troubleshooting steps do not resolve the issue, consider reaching out to your domain provider's support team for further assistance or contact HighLevel support for specialized help in resolving DNS-related issues.",
+        "citation": [
+            {
+                "title": "LC Email Dedicated Sending Domains",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001226115"
+            },
+            {
+                "title": "Email Sending Guide: Email Best Practices & Email Warm Up",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001021"
+            },
+            {
+                "title": "Setting up Whitelabel Domain, API Domain, Email Sending Domain, Sites Domain, Client Portal Domain & more",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002561"
+            },
+            {
+                "title": "When email replies are not showing up in Conversation",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001185819"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002220"
+    },
+    {
+        "query": "my zoom meeting does not appear in my calendar nor my zoom account.",
+        "answer": "To address the issue of Zoom meetings not appearing in your calendar or Zoom account, follow these steps:\n\n1. **Ensure Zoom Integration is Set Up Correctly:**\n   - Verify that your Zoom account is properly connected to your calendar settings. You can do this by navigating to your calendar settings and checking if Zoom is listed as a connected integration.\n   - Make sure that Zoom is selected as the meeting location in your calendar settings. This is crucial for generating dynamic Zoom links for each meeting.\n\n2. **Check Calendar Type:**\n   - Ensure that you are using a calendar type that supports dynamic Zoom links. Dynamic Zoom links are only available with Round Robin and Collective Calendars.\n\n3. **Verify Meeting Location Settings:**\n   - Go to your calendar settings and ensure that Zoom is set as the default meeting location. This will ensure that Zoom links are generated and included in calendar events.\n\n4. **Integration with HighLevel:**\n   - If you are using HighLevel, ensure that your Zoom account is connected through the \"My Profile\" or \"Calendars\" menu under Settings. Follow the steps to connect your Zoom account and ensure it is properly integrated.\n\n5. **Check for Errors:**\n   - If the integration is set up correctly and the issue persists, check for any error messages or notifications in your calendar or Zoom account that might indicate a problem with the integration.\n\nBy following these steps, you should be able to resolve the issue of Zoom meetings not appearing in your calendar or Zoom account.",
+        "citation": [
+            {
+                "title": "Zoom Integration for Users' Calendar Bookings",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001179593"
+            },
+            {
+                "title": "Zoom - How to Integrate Zoom with HighLevel Calendars",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002372"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002374"
+    },
+    {
+        "query": "I need help creating a conversation AI",
+        "answer": "To create a Conversation AI, follow these steps:\n\n1. **Enable Conversation AI in Your Agency:**\n   - Navigate to your agency settings in the left sidebar.\n   - Go to \"Company\" Settings and scroll down on the right.\n   - Click the toggle \"Enable Conversation AI.\"\n   - Accept the terms and conditions and click \"Enable.\"\n   - Utilize the new \"Conversation AI\" tab in Agency Settings to manage the feature for each sub-account. [Document 5]\n\n2. **Configure Conversation AI Settings:**\n   - Once enabled, head over to the \"Settings\" tab and select \"Conversation AI.\"\n   - In the \"Preferences\" section, choose from three modes: Off, Suggestive, or Auto-Reply.\n   - Select the supported channels where Conversation AI will be active, such as SMS, Facebook, Instagram, and Google My Business.\n   - Set up appointment booking by picking a calendar from your CRM and customizing the conversation flow.\n   - Customize bot responses by adding FAQs and their responses to train the bot effectively. [Document 1]",
+        "citation": [
+            {
+                "title": "How to Use Conversation AI to Book Appointments",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000000210"
+            },
+            {
+                "title": "Enable Conversation AI for your Agency",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001361"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000000209"
+    },
+    {
+        "query": "My SMS service has been blocked",
+        "answer": "There is no answer available",
+        "citation": [
+            {
+                "title": "LC - Phone Messaging Policy",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001213941"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001213941"
+    },
+    {
+        "query": "I want to disconnect our email sub domain from this subaccount",
+        "answer": "To disconnect your email sub-domain from a sub-account, follow these steps:\n\n1. Navigate to the **EMAIL SERVICES** section in your sub-account location settings.\n2. Click on the **Dedicated Domain and IP** button to view all your connected sending domains.\n3. Open the actions menu for your domain by clicking the three-dot button located in the top left corner of your domain.\n4. Click the button titled **Delete Domain**.\n5. You'll be presented with a confirmation popup to ensure you intend to delete your domain. Once you confirm, your domain will be deleted.",
+        "citation": [
+            {
+                "title": "Deleting Your LC Email Sending Domain",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000003212"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001226115"
+    },
+    {
+        "query": "I want to have an if/else based on if appointment is canceled by owner or client",
+        "answer": "To create an if/else condition based on whether an appointment is canceled by the owner or client, you can use the \"Update Appointment Status\" action in your workflow. This action allows you to change the status of an appointment to \"Cancelled\". You can then set up an if/else condition to check the appointment status and branch the workflow accordingly. However, the documents do not specify a direct method to distinguish between cancellations made by the owner or the client.",
+        "citation": [
+            {
+                "title": "Workflow Action - Update Appointment Status",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000003364"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001180266"
+    },
+    {
+        "query": "Domain related issues",
+        "answer": "To address domain-related issues, follow these steps:\n\n1. **Verify Domain DNS Integration:**\n   - Ensure that the domain DNS records are correctly added to the provider where the domain Nameservers are pointing. If the Nameservers are managed by a different provider, integrate the necessary records into the DNS of that provider. Utilize tools like MX Toolbox to verify the hosting provider and ensure that the records are propagating the correct data. [1]\n\n2. **Add and Verify DNS Records:**\n   - Add your domain in the settings under Email Services and verify it. You can either auto-configure DNS or set it up manually by adding the necessary TXT, CNAME, and MX records. Ensure that these records are correctly configured to avoid issues. [5]\n\n3. **Check for Common DNS Errors:**\n   - Ensure there are no duplicate A or CNAME records for the same domain/subdomain. Only one DNS record should be set up for a domain/subdomain. [13]\n\n4. **SSL Certificate Setup:**\n   - Verify your domain to ensure that the SSL certificate is issued or reissued. This is crucial for secure email communications and to prevent broken links in emails. [11]\n\n5. **Troubleshoot Email Replies Not Showing:**\n   - Check if Mailgun Receiving Route is set up and verify MX records to ensure they point to the correct servers. If using a root domain with Google Workspace and Mailgun, ensure it is not pointing to multiple email servers. [12]\n\n6. **Reverse DNS (rDNS) Setup:**\n   - Ensure that the PTR records are set up correctly for your dedicated IP to improve email deliverability and branding. [9]\n\n7. **Dedicated Sending Domain Setup:**\n   - When setting up a dedicated sending domain, ensure that the domain is not shared across multiple sub-accounts to maintain email deliverability. [4]\n\n8. **Troubleshoot SSL Errors:**\n   - If encountering SSL errors, check for multiple DNS records for the same domain/subdomain and ensure that the correct DNS records are added. [13]\n\n9. **Use Tools for Monitoring and Testing:**\n   - Utilize tools like Mail Tester to check the spammyness of your emails and MX Toolbox for email health reports to identify potential issues with your domain. [4]",
+        "citation": [
+            {
+                "title": "Setting up Whitelabel Domain, API Domain, Email Sending Domain, Sites Domain, Client Portal Domain & more",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002561"
+            },
+            {
+                "title": "How to Add a Domain and Verify DNS Record",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002220"
+            },
+            {
+                "title": "Siteground Dedicated Sending Domain Setup (LC Email)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000000568"
+            },
+            {
+                "title": "GoDaddy Dedicated Sending Domain Setu (LC Email)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001237513"
+            },
+            {
+                "title": "Google Dedicated Sending Domain Setup (LC Email)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001240481"
+            },
+            {
+                "title": "Reverse DNS white labeling - Dedicated IP",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001154"
+            },
+            {
+                "title": "Deleting Your LC Email Sending Domain",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000003212"
+            },
+            {
+                "title": "SSL Certificates for Dedicated LC Email Domains",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001227438"
+            },
+            {
+                "title": "When email replies are not showing up in Conversation",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001185819"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002220"
+    },
+    {
+        "query": "I want fix the broken link sent by the HO CRM?",
+        "answer": "To fix broken links sent by the HO CRM, follow these steps:\n\n1. **Verify CNAME Record:**\n   - Ensure that the CNAME record for your Mailgun subdomain (e.g., email.mg.yourdomain.com) is correctly set up to point to Mailgun.org. This is crucial for tracking open and click statistics.\n\n2. **Check DNS Records:**\n   - Use tools like [MX Toolbox](https://mxtoolbox.com/CnameLookup.aspx) or [Whatsmydns](https://www.whatsmydns.net/) to verify the CNAME record.\n   - If DNS records are not found, log in to your domain provider, check the DNS records, and ensure the CNAME is correctly pointing to Mailgun.org.\n\n3. **Mailgun Settings:**\n   - If the CNAME is correctly set, go to Mailgun, click on the \"Sending\" tab, then \"Domain Settings,\" and edit the tracking protocol.\n   - Send a test email from HighLevel to ensure the links are working.\n\n4. **Contact Support:**\n   - If the above steps do not resolve the issue, contact your domain provider's support team for assistance. Show them the necessary records that need to be added.\n   - If the domain provider confirms that all DNS records are correct, reach out to HighLevel support for further help.\n\nBy following these steps, you should be able to resolve the issue of broken links in emails sent by the HO CRM.",
+        "citation": [
+            {
+                "title": "How to fix links in the email that do not open?",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001151622"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001227438"
+    },
+    {
+        "query": "A2P Failure",
+        "answer": "To address A2P (Application-to-Person) failures, follow these steps:\n\n1. **Identify Common Reasons for Failure:**\n   - Opt-In Information Provided: Ensure that your opt-in process is clear and compliant with regulations.\n   - Forbidden Use Cases: Avoid prohibited content such as cannabis, hate speech, and other restricted categories.\n   - Not Updating Examples Provided: Ensure all placeholder information is updated with your business details.\n   - Inaccurate Company Information: Verify that your business information matches official records.\n   - Broken/Inactive Links: Ensure all links provided in your registration are active and correct.\n\n2. **Review and Correct Registration Details:**\n   - Ensure that your business name, address, and contact information are accurate and match official documents like the CP 575 EIN Confirmation Letter.\n   - For Sole Proprietor registrations, ensure that you do not use a Tax ID and that the business address is valid in the US or Canada.\n\n3. **Comply with Messaging Policies:**\n   - Ensure that your campaign does not involve prohibited content and follows the messaging policy.\n   - Provide accurate and consistent data in your campaign registration.\n\n4. **Understand the Registration Process:**\n   - Complete the necessary steps for brand and campaign registration, ensuring all information is accurate and compliant.\n   - Be aware of the fees associated with registration and ensure they are paid.\n\n5. **Monitor and Adjust Campaigns:**\n   - Monitor opt-out and error rates to ensure they remain within acceptable thresholds.\n   - Adjust messaging strategies to reduce error rates and improve delivery.\n\n6. **Seek Support if Needed:**\n   - If your campaigns are rejected, contact support for assistance in correcting and resubmitting your registration.\n\nBy following these steps, you can address common A2P failures and improve the chances of successful registration and campaign approval.",
+        "citation": [
+            {
+                "title": "Fixing Failed Number Registrations (A2P Local and Toll-Free)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001454"
+            },
+            {
+                "title": "A2P Sole Proprietor Brands Registration",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000000340"
+            },
+            {
+                "title": "A2P 10DLC Campaign Approval Best Practices",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001229784"
+            },
+            {
+                "title": "A2P 10DLC Brand Approval Best Practices",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000000508"
+            },
+            {
+                "title": "US Phone Number Registrations",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002380"
+            },
+            {
+                "title": "LC Phone System Trust Center",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001225526"
+            },
+            {
+                "title": "Best Practices for SMS deliverability and Avoiding SMS Restrictions",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000000079"
+            },
+            {
+                "title": "[A2P Registration] Opt-In Form - Terms and Conditions Guidelines",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001426"
+            },
+            {
+                "title": "A2P 10DLC Campaign Vetting Changes - January 2023",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001229783"
+            },
+            {
+                "title": "Pricing and Fees for the A2P 10DLC Service",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000000234"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000001454"
+    },
+    {
+        "query": "need sid for subaccount",
+        "answer": "To obtain the SID for a Twilio subaccount, follow these steps:\n\n1. Log into your Twilio account.\n2. Navigate to the **Subaccounts** section by clicking on **Account** in the top right corner and then selecting **Subaccounts**.\n3. If there are many subaccounts, you can use the Account SID from the HighLevel agency settings to search for the specific subaccount in Twilio.\n4. Once you find the subaccount, click on it to view the details, including the Account SID.\n\nThis process will help you identify and copy the SID for the specific subaccount you are interested in.",
+        "citation": [
+            {
+                "title": "Call disconnected in mobile app only",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001172952"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001177283"
+    },
+    {
+        "query": "my client has been SMS blocked for this account",
+        "answer": "If your client's account has been blocked for SMS, here are the steps you can take:\n\n1. **Stop All Workflows and Campaigns**: Immediately halt all workflows, campaigns, triggers, and bulk actions to contacts who have not explicitly opted in to receive messages from the sub-account.\n\n2. **Customize Opt-Out Language and Sender ID**: Enable and customize the opt-out language and Sender ID message as per your use case to ensure that all upcoming messages are not flagged.\n\n3. **Discuss with Client**: Advise your client to refrain from sending bulk communications, message blasts, or cold prospecting message campaigns until the issue is resolved.\n\n4. **Understand Error and Opt-Out Rates**: A high opt-out rate indicates objections or complaints from contacts, and a high delivery error rate indicates issues with unreachable contacts or non-SMS-capable devices. Ensure these rates are within acceptable thresholds to avoid future suspensions.\n\n5. **Wait for Suspension to Lift**: The sub-account suspension will typically be lifted in 24 hours. However, if the sub-account is permanently suspended, refer to the article on why the account is suspended for further steps to unsuspend the sub-account.\n\n6. **Allowed Actions During Suspension**: Note that one-on-one conversations, test SMS, resend messages, and MissedCallTextBack are allowed even if the account is suspended.",
+        "citation": [
+            {
+                "title": "LC - Phone Messaging Policy",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001213941"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48000981696"
+    },
+    {
+        "query": "need sid for a subaccount",
+        "answer": "There is no answer available",
+        "citation": [],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001177283"
+    },
+    {
+        "query": "I have a dedicated domain but I have hit a sending limit.",
+        "answer": "If you have a dedicated domain and have hit a sending limit, you can extend the sending limit by contacting the support team. For a dedicated domain, the email sending limit is initially set from 250 to 450,000 emails. To increase this limit, you need to reach out to the support team for assistance. You can manage this by navigating to the sub-account detail page through \"Agency View\" > \"Sub-Accounts\" > Search and click on the Sub-Account Name and scroll down to the \"Additional Settings\" section to increase the limit.",
+        "citation": [
+            {
+                "title": "What is LC Email?",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001220605"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001220605"
+    },
+    {
+        "query": "I'm wondering how to remove a dedicated IP from our account. I noticed our deliverability was dropping a bit so I thought a new IP might help but didn't realize it would keep the old one as well. now we have two and I want to ensure we're not paying monthly for both.",
+        "answer": "To delete a dedicated sending domain in LC Email, follow these steps:\n\n1. Navigate to **Settings** -> **Email settings** -> **Domain services**.\n2. Click on the **three-dot** button next to the domain you wish to delete.\n3. Click the **Delete** button to remove the domain.\n\nAlternatively, if you are in the EMAIL SERVICES section of your location settings:\n\n1. Open the **Dedicated Domain Settings** by clicking the \"Dedicated Domain and IP\" button.\n2. Open the actions menu for your domain by clicking the three-dot button.\n3. Click the \"Delete Domain\" button and confirm your choice in the popup to delete the domain.\n\nOnce deleted, the DNS records are removed, allowing you to connect the domain to another email service if needed. You can reconnect the domain to the same sub-account later if desired. However, note that deleting a domain might affect your email deliverability rate depending on the domain's reputation.\n\nIf you want to move a sending domain from Mailgun to LeadConnector, delete the domain from Mailgun and create the same in LeadConnector by navigating to **Sending** > **Domain Settings**, selecting the right domain, and clicking **Delete** at the bottom.",
+        "citation": [
+            {
+                "title": "LC Email Dedicated Sending Domains",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001226115"
+            },
+            {
+                "title": "Deleting Your LC Email Sending Domain",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000003212"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000001152"
+    },
+    {
+        "query": "Need help adding Zoom link to automated calendar invites.",
+        "answer": "To add a Zoom link to automated calendar invites, follow these steps:\n\n1. **Ensure Zoom Integration is Set Up:**\n   - First, make sure your Zoom account is connected. You can do this from the \"My Profile\" menu under the Settings tab or from the \"Calendars\" menu under the Settings tab.\n   - Go to Calendars > Calendar Settings > Connections.\n   - Locate the video conferencing tab, click on \"Add New,\" and then click \"Connect\" next to Zoom.\n   - Sign in to Zoom with your credentials to complete the connection.\n\n2. **Add Zoom to Your Calendar:**\n   - Navigate to your calendar settings.\n   - Select the calendar where you want to add dynamic Zoom links.\n   - Edit the calendar and go to the meeting details section.\n   - Under Team Members > Meeting Location, select Zoom and click Save.\n\n3. **Automate Zoom Link in Calendar Invites:**\n   - Once Zoom is set as the meeting location, a unique Zoom link will be automatically generated for each new booking and included in the calendar invite.\n   - This feature is supported for Round Robin and Collective calendars.\n\nBy following these steps, Zoom links will be automatically included in your calendar invites, ensuring seamless integration and scheduling. \n\nPlease note that dynamic Zoom links are only available with Round Robin and Collective Calendars.",
+        "citation": [
+            {
+                "title": "Zoom Integration for Users' Calendar Bookings",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001179593"
+            },
+            {
+                "title": "Zoom - How to Integrate Zoom with HighLevel Calendars",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002372"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002372"
+    },
+    {
+        "query": "When I call I dont want the voice to say that the call is being recorded",
+        "answer": "To prevent the voice from announcing that the call is being recorded, you can modify the call recording settings. When enabling call recording, you have the option to put a few spaces in the announcement field so that it will not announce anything. This depends on the regulations where you live, so ensure that this is allowed in your area. However, note that for workflow action call steps, the call recording message will still be announced.",
+        "citation": [
+            {
+                "title": "Calls Not Recording",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001076526"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001229976"
+    },
+    {
+        "query": "I removed the \"If you no longer wish to receive these emails you may unsubscribe\" message from the email template but it's still be added automatically. Can you guide me how to get it removed? \\n\\nThe email templates are \"Welcome Email Template\" and \"Welcome Email Template - For existing clients\" ",
+        "answer": "To remove the default unsubscribe link added at the footer of your email templates, you need to follow these steps:\n\n1. Navigate to **Sub-account** -> **Settings** -> **Business Profile** -> **General**.\n2. Here, you can customize the opt-out message or remove the default unsubscribe link.\n\nThis process allows you to manage the unsubscribe link settings for your email templates effectively.",
+        "citation": [
+            {
+                "title": "How to Set Up Unsubscribe Links for LC - Email",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001225534"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001225534"
+    },
+    {
+        "query": "I need a number ported from sub account: [x_id] to new account: [y_id]",
+        "answer": "There is no answer available",
+        "citation": [],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001177283"
+    },
+    {
+        "query": "reintegrate smtp",
+        "answer": "To reintegrate SMTP, follow these steps:\n\n1. **Update Sender Email Address:** Ensure that the sender's email address matches the integrated SMTP email. This is crucial for successful email delivery.\n\n2. **Check SMTP Provider Limits:** Be aware of any daily limits imposed by your SMTP provider. For example, Gmail has a limit of approximately 100-150 emails per day when connected from a remote email client.\n\n3. **Configure Email Statistics:** Note that SMTP integration will only show opened and clicked statistics. For full statistics, consider setting up Mailgun or LC Email.\n\n4. **Disable Email Re-Billing:** Make sure that Email Re-Billing is disabled while making changes to the default provider.\n\n5. **Test SMTP Integration:** Use tools like the GMass SMTP test tool to verify the integration.\n\n6. **Direct Integrations:** If using Google or Outlook, consider using direct integrations instead of SMTP for better support and functionality.\n\n7. **Verify SMTP Credentials:** Ensure that the SMTP credentials are correctly configured and that the sender email is verified with your SMTP provider.\n\n8. **Troubleshoot Common Issues:** If issues persist, check for common problems such as incorrect email settings or unverified sender emails.\n\nBy following these steps, you can successfully reintegrate SMTP and ensure smooth email operations.",
+        "citation": [
+            {
+                "title": "Setting Up SMTP Providers",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001059689"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001059689"
+    },
+    {
+        "query": "were wondering if numbers can be transferred within sub accounts?",
+        "answer": "Yes, numbers can be transferred within sub-accounts. To move numbers across sub-accounts, you need to follow these steps:\n\n1. Click on Settings.\n2. Click on Phone Integration.\n3. Click on Move Numbers.\n4. Now you can move numbers across sub-accounts.\n5. Click on Move numbers, and you will be able to see the moved number in the destination sub-account.\n\nThis process allows for different types of number transfers such as Twilio to Twilio, Twilio to LC Phone, LC Phone to Twilio, and LC Phone to LC Phone.",
+        "citation": [
+            {
+                "title": "Moving Numbers tool across sub-accounts",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001203968"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001203968"
+    },
+    {
+        "query": "How to make the consent form optional",
+        "answer": "To make the consent form optional, follow these steps:\n\n1. **Create a Custom Field Checkbox**:\n   - Navigate to the Custom Fields section in your form builder.\n   - Add a new field and select \"Checkbox\" as the type.\n   - Name the field appropriately, such as \"Marketing Consent Checkbox\".\n\n2. **Ensure the Checkbox is Optional**:\n   - When adding the checkbox to your form, ensure it is not marked as required. This allows users to submit the form without selecting the checkbox, making it optional.\n\n3. **Separate Consent from Other Agreements**:\n   - Ensure that the consent checkbox is separate from other agreements like Terms & Conditions or Privacy Policy. This separation is crucial for compliance and clarity.\n\n4. **Customize the Consent Text**:\n   - Customize the text of the consent checkbox to clearly state what the user is consenting to, such as receiving marketing messages. Include details like message frequency and opt-out instructions.\n\n5. **Review and Test**:\n   - After setting up the form, review and test it to ensure that the checkbox is functioning as optional and that the form can be submitted without it being checked.\n\nBy following these steps, you can ensure that the consent form is optional, allowing users to choose whether or not to provide their consent for receiving messages.",
+        "citation": [
+            {
+                "title": "A2P 10DLC Campaign Approval Best Practices",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001229784"
+            },
+            {
+                "title": "Why is your account suspended",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001207676"
+            },
+            {
+                "title": "Fixing Failed Number Registrations (A2P Local and Toll-Free)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001454"
+            },
+            {
+                "title": "Gain Consent With Custom Checkboxes In Forms (GDPR Compliance)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001185523"
+            },
+            {
+                "title": "Consent checkbox for compliance",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001032"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000001032"
+    },
+    {
+        "query": "how to get a phone number on my account",
+        "answer": "To get a phone number on your account, follow these steps:\n\n1. **Switch to the Sub-Account:**\n   - At the top left, click to switch to the sub-account where you want to purchase a phone number.\n   - Use the account switcher option to search for and select the sub-account.\n\n2. **Access Settings:**\n   - Once you are in the sub-account, click on 'Settings'.\n\n3. **Navigate to Phone Numbers:**\n   - Click on 'Phone Numbers'.\n\n4. **Add a Phone Number:**\n   - Click on 'Add Number' under the 'Add Number' tab.\n\n5. **Select the Country:**\n   - Choose the country for which you want to buy the number.\n\n6. **Choose and Purchase the Number:**\n   - Select the number of your choice and then click on 'Proceed to Buy' to purchase the number.\n\nThis process will add the selected phone number to your account under the phone number tab.",
+        "citation": [
+            {
+                "title": "How to Purchase a Phone Number in a Sub-Account",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48000981420"
+            },
+            {
+                "title": "How to Purchase a Phone Number in a Sub-Account",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000003226"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48000981420"
+    },
+    {
+        "query": "I am trying to sync my calendar so I can get notified whenever someone books a meeting",
+        "answer": "To sync your calendar and get notified whenever someone books a meeting, follow these steps:\n\n1. **Connect Your Calendar:**\n   - Go to your account settings and navigate to the \"Integrations\" section.\n   - Connect your Google, Outlook, or iCloud calendar by signing in and granting the necessary permissions.\n\n2. **Configure Calendar Settings:**\n   - Go to \"Calendars > Calendar Settings > Connections.\"\n   - Set up your \"Linked Calendar\" to ensure all new events created in the system are added to your linked calendar. This will allow you to view these events directly on your third-party calendar (e.g., Google, Outlook).\n   - Ensure that your \"Conflict Calendar\" is set up to sync events from third-party calendars to the system, blocking your availability for the event's duration.\n\n3. **Set Up Notifications:**\n   - Navigate to the \"Notifications\" tab in your calendar settings.\n   - Customize your notification settings to receive alerts when appointments are booked, canceled, rescheduled, or need reminders or follow-ups.\n   - You can choose to receive notifications via email or in-app, and configure the timing for reminders and follow-ups.\n\nBy following these steps, you will be able to sync your calendar and receive notifications for any new bookings, ensuring you stay informed and organized.",
+        "citation": [
+            {
+                "title": "Email & In-App Appointment Notifications",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000003441"
+            },
+            {
+                "title": "Setting Up Linked Calendars & Conflict Calendars",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002374"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002374"
+    },
+    {
+        "query": "I received this message when sending out my latest email newsletter campaign: \"You have violated our email sending policy. Your account has been suspended for sending further emails. Please contact support.\" ",
+        "answer": "There is no answer available",
+        "citation": [
+            {
+                "title": "What is email Bounce Suspension, and how to avoid it",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001214786"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001214786"
+    },
+    {
+        "query": "Twilio transition to LC phone use in GHL and WAV multi-dialer",
+        "answer": "1. **Transition from Twilio to LC Phone in GHL:**\n   - Agencies can migrate their existing sub-accounts to LC Phone by following a structured process. This involves validating LC Phone System access, converting the agency to ISV, and moving existing sub-accounts over to LC Phone. The migration process can be done in bulk for US/Canada sub-accounts or individually for non-US/Canada sub-accounts, which requires creating a Regulatory Bundle.\n   - The costs of using LC Phone are similar to Twilio, with a 10% discount on select categories. Agencies will be billed through the agency billing tab, and detailed transaction logs can be downloaded for analysis.\n   - If a client switches from Twilio to LC, call recordings will not transfer over but will remain available in the customer\u2019s Twilio account.\n   - For moving numbers from Twilio to LC Phone, agencies need to provide the location ID to support and create a support ticket with Twilio, including necessary details like losing and gaining sub-account SIDs.\n\n2. **WAV Multi-Dialer:**\n   - There is no specific information available regarding the WAV multi-dialer in the provided documents. However, if it involves telephony services, similar processes and considerations as those for LC Phone might apply, such as number migration and integration with existing systems.",
+        "citation": [
+            {
+                "title": "How do I migrate my agency and sub-account over to LC Phone?",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001204027"
+            },
+            {
+                "title": "What is LC - Phone System?",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001223546"
+            },
+            {
+                "title": "Moving Numbers tool across sub-accounts",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001203968"
+            },
+            {
+                "title": "Moving numbers to an LC Phone Sub-account from the client's own Twilio account",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001240108"
+            },
+            {
+                "title": "Moving numbers out of an LC Phone Sub-account to the client's own Twilio account",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001240107"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001204027"
+    },
+    {
+        "query": "Attaching a zoom link",
+        "answer": "To attach a Zoom link to your calendar, follow these steps:\n\n1. **Ensure Zoom Integration is Set Up:**\n   - First, make sure your Zoom account is connected. You can do this from the \"My Profile\" menu or the \"Calendars\" menu under the Settings tab.\n   - Go to Calendars > Calendar Settings > Connections.\n   - Locate the video conferencing tab, click on \"Add New,\" and then click \"Connect\" next to Zoom.\n   - Sign in to Zoom with your credentials to complete the connection.\n\n2. **Add Zoom Links to Your Calendar:**\n   - Navigate to your calendar settings.\n   - Select the calendar where you want to add dynamic Zoom links.\n   - Edit the calendar and go to the meeting details section.\n   - Under Team Members > Meeting Location, select Zoom and click Save.\n\nNote: Dynamic Zoom Links are only supported for Round Robin and Collective calendars. This means that a unique Zoom link will be generated for each new booking automatically.",
+        "citation": [
+            {
+                "title": "Zoom Integration for Users' Calendar Bookings",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001179593"
+            },
+            {
+                "title": "Zoom - How to Integrate Zoom with HighLevel Calendars",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002372"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002372"
+    },
+    {
+        "query": "Registering for A2P Messaging and brand got regected 3 times somehow. Told to proceed with the following steps: \\n\\nMaximum 3 tries exhausted, please prepare the CP 575 form (EIN Confirmation Letter) for the sub-account and send that over to support team for next steps.\\n\\nI dont really know what that means and I dont understand whats wrong with my brand registration",
+        "answer": "To address the issue of your A2P Messaging and brand registration being rejected three times, follow these steps:\n\n1. **Prepare the CP 575 Form:**\n   - The CP 575 form is the EIN Confirmation Letter issued by the IRS. It is crucial to ensure that the legal business name and EIN on this form match exactly with the information submitted during the brand registration process.\n\n2. **Submit the CP 575 Form:**\n   - You need to send the CP 575 form (screenshots are acceptable) to the support team for the sub-account. This form will be used for brand approval.\n\n3. **Ensure Accurate Information:**\n   - Make sure that the legal business name and number submitted on the business profile match exactly with the CP 575 form. Any discrepancies can lead to rejection.\n\n4. **Request a 147c Letter if Necessary:**\n   - If you have misplaced your CP 575 notice, you can request a 147c letter from the IRS and use the information there for registration.\n\n5. **Follow Up with Support:**\n   - Once you have submitted the CP 575 form, follow up with the support team to ensure that the form is processed for brand approval.\n\nBy following these steps, you can address the issues with your brand registration and proceed with the A2P Messaging registration process.",
+        "citation": [
+            {
+                "title": "LC Phone System Trust Center",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001225526"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000000508"
+    },
+    {
+        "query": "I would like some help with 2 failed A2P registrations under 2 sub accounts for our clients, I would like to know what can we do to get this resolved?",
+        "answer": "To resolve failed A2P registrations for your clients' sub-accounts, follow these steps:\n\n1. **Review Rejection Reasons:**\n   - Check the specific reasons for the campaign rejection in the Trust Center tab by clicking on \"Failed\" to review the Campaign Failure Reason. TCR often rejects a campaign based on the first issue they encounter, so ensure to review the entire campaign submission and the client\u2019s website to ensure everything is correct and compliant.\n\n2. **Ensure Data Accuracy and Consistency:**\n   - Make sure that the data submitted for the campaign registration is accurate and consistent. This includes ensuring that the brand name, website, and sample messages are consistent and match the use case.\n   - Ensure that the email domain matches the company name, especially for large, well-known corporations.\n   - Provide real, working websites and ensure the brand registered is the actual brand for which messages are being sent.\n\n3. **Check Opt-In Information:**\n   - Ensure compliance with Messaging Policy relating to opt-in. Include all methods of opt-in, whether electronic, paper form, in-person verbal opt-in, or other means.\n   - Provide necessary links and documentation, such as a hosted link to an image of the opt-in if collected through a paper form or behind a login.\n   - Include a privacy policy and terms of service on the website where opt-in occurs.\n\n4. **Verify Website and Use Case:**\n   - Ensure that the website URL provided is valid and accessible. If the registration is for a pre-launch website, include a publicly accessible URL to view a screenshot of the SMS opt-in flow.\n   - Ensure that the sample messages are accurate, detailed, and reflective of the actual messages to be sent under the campaign.\n\n5. **Resubmit the Campaign:**\n   - Once you have addressed the issues, resubmit the campaign for review.\n\nBy following these steps, you can address the common reasons for A2P registration failures and improve the chances of successful registration.",
+        "citation": [
+            {
+                "title": "A2P 10DLC Campaign Approval Best Practices",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001229784"
+            },
+            {
+                "title": "Fixing Failed Number Registrations (A2P Local and Toll-Free)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001454"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000001454"
+    },
+    {
+        "query": "I want to check if I have completed the dedicated domain for email properly",
+        "answer": "To ensure that you have completed the dedicated domain setup for email properly, follow these steps:\n\n1. **Add Your Domain:**\n   - Navigate to **Settings > Email Services > Dedicated Domain and IP > + Add Domain**.\n   - Enter the domain you want to use and click \"Add & Verify.\" It is recommended to use a subdomain for better email deliverability. [Document 2]\n\n2. **Add DNS Records:**\n   - Log in to your DNS provider and add the necessary DNS records. This typically includes TXT, CNAME, and MX records. Ensure you copy the correct hostnames and values as specified for your setup. [Documents 5, 6]\n\n3. **Verify Domain:**\n   - After adding the DNS records, go back to the Email Services tab and click \"Verify Domain.\" If some records are still not showing the green checkmark, click the \"Verify Domain\" button again. [Documents 5, 6]\n\n4. **Check SSL Certificate:**\n   - Ensure that an SSL certificate is issued for your domain. This is crucial for securing links in your emails. You can check the SSL status in the domain management screen under **Settings > Email Services > Dedicated Domain And IP**. [Document 9]\n\n5. **Send a Test Email:**\n   - Finally, send a test email to ensure that emails are being sent properly. This will help confirm that your setup is complete and functional. [Document 5]",
+        "citation": [
+            {
+                "title": "LC Email Dedicated Sending Domains",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001226115"
+            },
+            {
+                "title": "How to Add a Domain and Verify DNS Record",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002220"
+            },
+            {
+                "title": "Google Dedicated Sending Domain Setup (LC Email)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001240481"
+            },
+            {
+                "title": "GoDaddy Dedicated Sending Domain Setu (LC Email)",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001237513"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001226115"
+    },
+    {
+        "query": "I want to remove people from a live workflow how can I do that ?",
+        "answer": "To remove people from a live workflow, you can use the \"Remove from Workflow\" action. This action allows you to remove a contact from a specific workflow, whether it's the current workflow or another specified workflow. Here are the steps:\n\n1. **Navigate to Workflow Actions:** Access the automation or workflow settings in your platform.\n2. **Choose the Action Type:** Select \"Remove from Workflow\" from the list of available actions.\n3. **Name Your Action:** Enter a descriptive name for the action, such as \"Remove from Marketing Campaign Workflow.\"\n4. **Select the Workflow:** Choose whether to remove the contact from the current workflow or another specified workflow or all workflows.\n\nThis action helps in keeping the workflow processes clean and relevant by eliminating contacts from workflows that are no longer applicable to them.",
+        "citation": [
+            {
+                "title": "Action - Remove from Workflow",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002553"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002553"
+    },
+    {
+        "query": "changing my email send limit",
+        "answer": "To change your email send limit, follow these steps:\n\n1. **Determine Your Current Domain Type:**\n   - If you have a **Shared Domain**, your email sending limit is between 250 to 15,000 emails per day.\n   - If you have a **Dedicated Domain**, your email sending limit is between 250 to 450,000 emails per day.\n\n2. **Increase Sending Limit:**\n   - For a Shared Domain, to increase the limit beyond 15,000 emails per day, you must set up a Dedicated Sending Domain for the sub-account.\n   - For a Dedicated Domain, to increase the limit beyond 450,000 emails per day, you need to contact the support team.\n\n3. **Access Sub-Account Settings:**\n   - Navigate to \"Agency View\" > \"Sub-Accounts\".\n   - Search and click on the **Sub-Account Name**.\n   - Scroll down to the \"Additional Settings\" section to increase the limit.\n\nEnsure that the sub-account activity is validated and it is not a spam account before attempting to increase the sending limit.",
+        "citation": [
+            {
+                "title": "What is LC Email?",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001220605"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001220605"
+    },
+    {
+        "query": "cant add connection to my MailGun account",
+        "answer": "To troubleshoot the issue of not being able to add a connection to your Mailgun account, follow these steps:\n\n1. **Verify Your Mailgun Account:** Ensure that you are signed up for the correct Mailgun account. The Foundation 50k plan is the minimum required, as the Flex \u201cPay as you Grow\u201d plan does not include Replies.\n\n2. **Configure Sending Subdomain:**\n   - Create a subdomain from your chosen root domain (e.g., reply.yourdomain.com).\n   - Add the DNS records provided by Mailgun into your domain settings.\n   - Verify the DNS records in Mailgun and ensure they have propagated.\n   - Check for a \"green checkmark\" next to the subdomain under Sending > Domains in Mailgun.\n\n3. **Mailgun Settings:**\n   - Under Sending > Domain Settings, enable Click Tracking and Open Tracking. Optionally, enable Unsubscribes.\n   - Update the Tracking Protocol to HTTPS to ensure links in your emails work even if the root domain SSL is compromised.\n\n4. **Receiving Settings:** Ensure a Catch-All Route is configured with the HighLevel webhook. This route should auto-create once your Mailgun API key and subdomain are configured inside HighLevel.\n\n5. **HighLevel Configuration:**\n   - In Agency View > Settings > Mailgun, ensure the API key and subdomain are associated with the desired sub-account.\n   - In the Sub-Account Settings, ensure the desired subdomain is set as the Default Provider.\n\n6. **Check for External Interactions:** Be cautious with BCC and Forwarding actions, as interacting with emails from an outside account can break the Reply Route, preventing further email replies from showing in HighLevel Conversations.\n\nBy following these steps, you should be able to successfully add a connection to your Mailgun account.",
+        "citation": [
+            {
+                "title": "Mailgun Setup Checklist",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001175336"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48000981682"
+    },
+    {
+        "query": "how to capture contact info from AI chat widget?",
+        "answer": "When a Facebook message is initiated through the AI chat widget, HighLevel automatically creates a contact with the name received from Facebook. If the contact enters an email address into the chat, HighLevel will automatically store that in the email field of that contact. This process also works for phone numbers, capturing and storing them in the contact record.",
+        "citation": [
+            {
+                "title": "How To Automatically Add Email Addresses & Phone Numbers From FB Chat Into Contact Record",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001173609"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000001320"
+    },
+    {
+        "query": "no zoom meeting link",
+        "answer": "There is no answer available",
+        "citation": [
+            {
+                "title": "Zoom Integration for Users' Calendar Bookings",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001179593"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002372"
+    },
+    {
+        "query": "no zoom meeting link",
+        "answer": "There is no answer available",
+        "citation": [
+            {
+                "title": "Zoom Integration for Users' Calendar Bookings",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001179593"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002372"
+    },
+    {
+        "query": "I would like to know what the charges for using a Toll-free number (US)?",
+        "answer": "The charges for using a Toll-Free number in the US are as follows:\n\n1. **Monthly Charge**: $2.15 per month.\n2. **Outbound SMS**: $0.0079 per segment.\n3. **Inbound SMS**: $0.0079 per segment.\n4. **Outbound MMS**: $0.0200 per segment.\n5. **Inbound MMS**: $0.0200 per segment.\n6. **Outbound Call**: $0.0180 per minute.\n7. **Inbound Call**: $0.0220 per minute.",
+        "citation": [
+            {
+                "title": "LC Phone Pricing Structure",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001223556"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001223556"
+    },
+    {
+        "query": "All my emails are going to spam. I believe I have the DMARC, DKIM, and other settings configured, but I am new to all this and not sure what to do. ",
+        "answer": "To address the issue of your emails going to spam, follow these steps:\n\n1. **Check DMARC, DKIM, and SPF Configuration:**\n   - Ensure that your DMARC, DKIM, and SPF records are correctly set up. These are crucial for email authentication and help prevent your emails from being marked as spam. You can use tools like [Dmarcian](https://dmarcian.com/dmarc-inspector/) to verify your DMARC setup.\n\n2. **Review Your Email Content:**\n   - Avoid using spammy words or phrases in your email content. Ensure that your emails are not overly promotional and maintain a good text-to-image ratio. Avoid using URL shorteners as they can trigger spam filters.\n\n3. **Domain and IP Reputation:**\n   - Check your domain and IP reputation. If your domain or IP has a poor reputation, it can lead to emails being marked as spam. Consider warming up your domain if it's new, as it can take up to four weeks for a domain to be fully warmed up.\n\n4. **Use a Dedicated Sending Domain and IP:**\n   - If possible, set up a dedicated sending domain and IP address. This helps in building a good reputation and improves deliverability.\n\n5. **Monitor Engagement Metrics:**\n   - Keep track of engagement metrics like open rates and click-through rates. High engagement can improve your sender reputation.\n\n6. **Check Email Health Reports:**\n   - Use tools like [MXToolbox](https://mxtoolbox.com/emailhealth) to review your email health report. This can help identify any issues with your domain that might be affecting deliverability.\n\n7. **Ensure Proper \"From Email\" Setup:**\n   - Make sure your \"From Email\" matches your sending domain to avoid deliverability issues.\n\n8. **Avoid Sending from Public Domains:**\n   - Sending emails from public domains like gmail.com or yahoo.com can lead to them being marked as spam. Use a domain that you own.\n\n9. **Check for Blacklisting:**\n   - Ensure that your domain or IP is not blacklisted. If it is, follow the necessary steps to get it removed.\n\nBy following these steps, you can improve your email deliverability and reduce the chances of your emails going to spam.",
+        "citation": [
+            {
+                "title": "Email Sending Guide: Email Best Practices & Email Warm Up",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001021"
+            },
+            {
+                "title": "Email Authentication - DMARC",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001224630"
+            },
+            {
+                "title": "Why Are My Emails Going To Spam?",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001063372"
+            },
+            {
+                "title": "Achieving Compliance: Meeting Google and Yahoo's Email Sender Requirements in 2024",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001634"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000001021"
+    },
+    {
+        "query": "Appointments not reflecting on our users calendar, availability as well ",
+        "answer": "1. **Check Calendar Configuration:** Ensure that the calendar is properly configured under Calendars > Calendar Settings > Connections. Verify that the Linked Calendar and Conflict Calendars are set correctly. This ensures that events are synced between the system and third-party calendars like Google, Outlook, or iCloud.\n\n2. **Verify Sync Preferences:** Make sure the sync preferences are set to either Default Sync (One-way Sync) or Two-way Sync as needed. In One-way Sync, events from the system are synced to the linked calendar as blocked slots, while in Two-way Sync, events are synced as appointments, and contacts are created for guests.\n\n3. **Reintegrate Google Connection:** If the Google calendar integration is broken, it might be due to a password change or other reasons causing the refresh token to expire. Reintegrate the Google connection to resolve this issue. This involves reconnecting the Google account to the system to refresh the token and restore syncing capabilities.\n\n4. **Check for Expired Tokens:** If the Google connection has expired, reintegrate the Google account to refresh the token. This is necessary if the access token was revoked due to changes in the Google account, such as a password change.\n\n5. **Ensure Proper Integration:** For group calendars, follow the specific steps to fully reintegrate the Google calendar for team members, ensuring that all appointments and availability are correctly reflected.",
+        "citation": [
+            {
+                "title": "Setting Up Linked Calendars & Conflict Calendars",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002374"
+            },
+            {
+                "title": "Why Google calendar integration breaks and how to fix it",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001204159"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002374"
+    },
+    {
+        "query": "I am trying to figure out how to have the \"reply to\" email address the same is the actual \"from\" email address I do have a dedicated domain ",
+        "answer": "To have the \"reply-to\" email address the same as the actual \"from\" email address, you can configure this in the settings. Here\u2019s how you can do it:\n\n1. **Navigate to Settings:** Go to **Settings > Email Services > Reply & Forward Settings**.\n\n2. **Add a Reply-to Address:** You have the option to add a reply-to address. All incoming emails will be sent to that email address instead of routing to the Conversation tab.\n\n3. **Ensure Synchronization:** When you reply to the leads' email in your inbox outside the CRM, your reply will not sync back to the CRM. Therefore, make sure to reply within the system to maintain synchronization.\n\n4. **Save the Configuration:** Make sure to save once you have entered a reply-to address.\n\nBy setting the reply-to address to be the same as the from address, you ensure that replies are directed to the same email address from which the email was sent.",
+        "citation": [
+            {
+                "title": "Email Services Configuration - Reply & Forward Settings",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001155000"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001155000"
+    },
+    {
+        "query": "Hi there, i set the new Whatsapp Delivery Status workflow in one of my existing workflows.\\n\\nI Set the if/any action. So, if the delivery is successful move to a particular pipeline stage. If the delivery is not successfull, move it to another stage. I found that not all of the unsuccessful deliverys was on the right piepline stage. I checked the execution status and it says that the message was successfully delivered. But then i check the messagge on conversation menu, and it says that the message delivery was not successful. ",
+        "answer": "1. **Setting Up the Workflow:** You have set up a workflow using the WhatsApp Delivery Status feature, which allows you to use conditional logic based on the delivery status of WhatsApp messages.\n\n2. **Conditional Logic:** You configured an if/else action to move messages to different pipeline stages based on their delivery status. If the delivery is successful, the message moves to a particular pipeline stage; if not, it moves to another stage.\n\n3. **Issue Identification:** You noticed that not all unsuccessful deliveries were moved to the correct pipeline stage. Upon checking, the execution status indicated that the message was successfully delivered.\n\n4. **Discrepancy in Status:** However, when you checked the message in the conversation menu, it showed that the message delivery was not successful.\n\n5. **Possible Explanation:** This discrepancy might be due to a delay or error in updating the delivery status in the workflow execution compared to the conversation menu. It is important to ensure that the workflow logic and the actual message status are synchronized to avoid such inconsistencies.",
+        "citation": [
+            {
+                "title": "WhatsApp Delivery Status under Workflows",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002491"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000001624"
+    },
+    {
+        "query": "I already have a Twilio and it is already approved for messaging - I just need your help to know how can i connect that twilo account within the specific sub-account",
+        "answer": "To connect your existing Twilio account within a specific sub-account, follow these steps:\n\n1. Go to the **Agency view** in your HighLevel account.\n2. Navigate to **Settings** and then to **Phone System**.\n3. If the location already has a Twilio SID generated, click **Update Credentials** by clicking the three dots on the right to delete the existing connection.\n4. If the account SID and auth token provided by your client is a Twilio **Subaccount**, you can replace the Account SID and auth token here with the new ones.\n5. If the account SID and auth token provided by your client is a Twilio **Master account**, it's best to integrate with the subaccount by creating a subaccount inside Twilio.\n6. To create a subaccount inside Twilio, go to the Twilio Console, click the **Account** dropdown on the top right, select **Subaccounts**, and then click on **Create subaccount**.\n7. Enter the location company name and click **Create subaccount**.\n8. Once the subaccount is created, click the **Account Name** to go inside the subaccount.\n9. Copy the Account SID and auth token to the HighLevel Twilio settings.\n10. If the number was in the master Twilio account, reach out to Twilio support to help move the numbers.",
+        "citation": [
+            {
+                "title": "How to use the client's own Twilio account for the location?",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001220001"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48000981421"
+    },
+    {
+        "query": "Hey there, we have a round robin calendar. When I set an appointment to that calendar, the appointment is not showing up on Google Calendar. I already connected the google integration on backend and to the staff that is assigned to that calendar.\\n\\nThe appointment is showing up on zoom but not on google calendar. ",
+        "answer": "To resolve the issue of appointments not showing up on Google Calendar for a Round Robin calendar, follow these steps:\n\n1. **Check Google Calendar Integration:** Ensure that your Google Calendar is properly connected. Go to your account settings, select 'Integrations,' and verify that your Google account is connected. If not, click on 'Sign in with Google' and complete the authentication process.\n\n2. **Verify Calendar Configuration:** Once your Google account is connected, make sure your calendar configuration is set correctly. Go to Calendars > Calendar Settings > Connections and ensure that your linked calendar is selected. This will ensure that events created in the system are synced to your Google Calendar.\n\n3. **Check Sync Preferences:** Ensure that your sync preferences are set correctly. You can choose between one-way sync (default) or two-way sync. For appointments to appear on Google Calendar, ensure that the linked calendar is set to sync events from the system to Google.\n\n4. **Test the Integration:** After verifying the integration and configuration, test by creating a new appointment and checking if it appears on Google Calendar.\n\nBy following these steps, you should be able to resolve the issue of appointments not appearing on Google Calendar.",
+        "citation": [
+            {
+                "title": "Google - How to Integrate Google with HighLevel Calendars",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002369"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002374"
+    },
+    {
+        "query": "I would like to change the sender's e-mail in the mailing, because when I answer an e-mail sent by us, the sender appears as somename.com@mail.somerealestateagency.com. ",
+        "answer": "To change the sender's email in your mailing, follow these steps:\n\n1. **Access the Email Settings:**\n   - Navigate to the section where you can configure the sender's email for your mailings. This can typically be found in the settings of your email marketing platform or tool.\n\n2. **Configure the Sender Email:**\n   - You can set a default 'From' name and email address for your emails. This setting can be overridden by individual email actions in the workflow if needed.\n\n3. **Override Default Settings:**\n   - If you want to use a different sender email for specific emails, you can specify a different 'From' name and 'From' email in the individual email actions within the workflow.\n\n4. **Verify the Sender Email:**\n   - Ensure that the sender email you wish to use is verified with your email service provider to avoid delivery issues.\n\nBy following these steps, you can change the sender's email to reflect the desired address instead of the default one that appears as somename.com@mail.somerealestateagency.com.",
+        "citation": [
+            {
+                "title": "Sending Priority - From Name & Address",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48000979925"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001155000"
+    },
+    {
+        "query": "my email are not delivered",
+        "answer": "There are several reasons why your emails might not be delivered. Here's a step-by-step guide to troubleshoot and resolve the issue:\n\n1. **Check the Spam Folder:** Ensure that the emails are not being delivered to the spam folder of the recipients. Sometimes, emails are marked as spam due to various reasons such as content or sender reputation.\n\n2. **Review Error Messages:** If you are using an SMTP provider, check the error messages displayed in the conversation view. These errors are fetched from the SMTP provider and can provide insights into why the email is not being sent. If the error is not clear, consider opening a support ticket with the SMTP provider to get the delivery status of the email. [Document 6]\n\n3. **Mailgun Logs:** If you are using Mailgun, check the Mailgun logs for specific emails. This can help you identify if the email was delivered or if there were any issues. You can filter logs by recipient to get detailed information. [Document 12]\n\n4. **SMTP Configuration:** Ensure that the sender email matches the SMTP email configured. Mismatched emails can lead to delivery issues. [Document 6]\n\n5. **Check for Bounced Addresses:** If an email address has previously bounced, it might be suppressed. Check the suppression list in Mailgun and remove the email if necessary. [Document 12]\n\nBy following these steps, you can identify and resolve issues related to email delivery.",
+        "citation": [
+            {
+                "title": "How to send a test email in the Conversation",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001208887"
+            },
+            {
+                "title": "Limitation of using SMTP when emails are not sending",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001203144"
+            },
+            {
+                "title": "How to check logs for a specific email in Mailgun",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001188059"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001209322"
+    },
+    {
+        "query": "no zoom meeting link is sent",
+        "answer": "There is no answer available",
+        "citation": [
+            {
+                "title": "Zoom Integration for Users' Calendar Bookings",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001179593"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002372"
+    },
+    {
+        "query": "I'm setting up a new email address somename@somerealestateagency.com\\n\\nthis email address are currently hosting on business outlook365 plan\\n\\nwhen i set up in the GHL, it shows me this error\\n\\n\"{\\\"code\\\":\\\"EAUTH\\\",\\\"response\\\":\\\"535 5.7.139 Authentication unsuccessful, user is locked by your organization's security defaults policy. Contact your administrator. [RANDOMCHAR.root.prod.outlook.com 2024-06-03T07:24:36.754Z]\\\",\\\"responseCode\\\":535,\\\"command\\\":\\\"AUTH LOGIN\\\"}\"\\n\\n\\n\\n\\n------\\n\\nhow do i solve it?",
+        "answer": "To solve the error \"535 5.7.139 Authentication unsuccessful, user is locked by your organization's security defaults policy,\" follow these steps:\n\n1. **Enable SMTP Authentication**: Microsoft has changed its security settings, and now a third-party app requires SMTP Authentication to be enabled. You can follow the guide provided by Microsoft to enable SMTP Authentication. Here is the link to the guide: [How to set up a multifunction device or application to send email using Microsoft 365 or Office 365](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365).\n\n2. **Contact Outlook Support**: If the above article does not help, you may need to reach out to Outlook support to get the account authenticated.\n\nThese steps should help you resolve the authentication issue with your Outlook 365 email setup in GHL.",
+        "citation": [
+            {
+                "title": "Setting Up SMTP Providers",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001059689"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001059689"
+    },
+    {
+        "query": "How do I change the \"from\" on emails?  In the workflow it says \"Greg from Smart Start\" but when I test the email, it arrives as from \"greg\" ",
+        "answer": "To change the \"from\" on emails in a workflow, follow these steps:\n\n1. **Access Workflow Settings:** Go to the workflow where you want to change the \"from\" details.\n\n2. **Configure Sender Address:** In the workflow settings, you can specify the \"From Name\" and \"From Email\". This is where you can set the \"From Name\" to \"Greg from Smart Start\" instead of just \"greg\".\n\n3. **Override Default Settings:** If needed, you can override the default sender email by specifying a different \"from\" name and \"from\" email in individual email actions within the workflow.\n\nBy ensuring that the \"From Name\" and \"From Email\" are correctly set in the workflow settings, the emails should arrive with the desired \"from\" details.\n\nFor more detailed steps, refer to the workflow settings and email configuration sections in your platform.",
+        "citation": [
+            {
+                "title": "Sending Priority - From Name & Address",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48000979925"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001239875"
+    },
+    {
+        "query": "Proper syncing with google calendar to show blocs and not allow booking",
+        "answer": "To ensure proper syncing with Google Calendar to show blocks and prevent bookings, follow these steps:\n\n1. **Connect Google Calendar:**\n   - Navigate to the 'Integrations' section in your sub-account settings.\n   - Click 'Sign In with Google' to connect your Google account.\n   - Grant the necessary permissions to allow syncing.\n\n2. **Configure Linked Calendar:**\n   - Go to 'Calendar Settings' and select 'Connections'.\n   - Choose your Google Calendar as the Linked Calendar. This will ensure that all new events created in the system are added to your Google Calendar.\n\n3. **Set Conflict Calendar:**\n   - Add your Google Calendar as a Conflict Calendar. This will sync events from Google Calendar to the system, blocking your availability for the event's duration if marked as 'BUSY'.\n\n4. **Sync Preferences:**\n   - In the Advanced Settings, choose between 'One-way Sync' or 'Two-way Sync'.\n   - 'One-way Sync' will sync events as blocked slots without creating contacts for guests.\n   - 'Two-way Sync' will create system appointments and contacts for guests found in linked calendar events.\n\n5. **Test and Confirm:**\n   - After setting up, test the syncing process by booking an appointment and checking if it appears as blocked in both your Google Calendar and the system.\n\nBy following these steps, you can ensure that your Google Calendar is properly synced to show blocks and prevent double bookings.",
+        "citation": [
+            {
+                "title": "How to Re-Integrate Google Calendar for a User",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001181302"
+            },
+            {
+                "title": "Setting Up Linked Calendars & Conflict Calendars",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002374"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002369"
+    },
+    {
+        "query": "My Zoom has an error and clients can not join the meeting and I have to send them manual links",
+        "answer": "There is no answer available",
+        "citation": [
+            {
+                "title": "Zoom Integration for Users' Calendar Bookings",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001179593"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002372"
+    },
+    {
+        "query": "Cant set up whatsapp business account on app after setting it up with lead connector",
+        "answer": "To set up a WhatsApp Business account on the app after setting it up with LeadConnector, follow these steps:\n\n1. **Go to Settings**: Navigate to the settings on your device.\n\n2. **WhatsApp Setup**: Select 'WhatsApp' and then choose 'Signup with Facebook'.\n\n3. **Continue with Signup**: Proceed with the signup process.\n\n4. **Connect to LeadConnector**: Connect your account to LeadConnector and click 'Get Started'.\n\n5. **Fill Business Information**: Enter your business information as required.\n\n6. **Onboard with Existing App**: Select 'Connect your existing WhatsApp Business app'.\n\n7. **Add Phone Number**: Add a phone number for WhatsApp.\n\n8. **Confirm or Edit Account**: Confirm or edit your WhatsApp Business account details.\n\n9. **Share Contacts and Chats**: Import contacts and up to six months of chat history from the WhatsApp Business app to LeadConnector. Ensure the app is updated to the latest version.\n\n10. **Connect to Business Platform**: Scan the QR code to connect to the Business Platform.\n\n11. **Share Chat History and Contacts**: Share your chat history and contacts.\n\n12. **Setup Complete**: The setup is complete, and you can continue using your WhatsApp Business App along with the Business Platform.\n\nNote: Sending template messages is not supported via the WhatsApp Business App; it can only be sent through the CRM. You will manage your WhatsApp profile from the WhatsApp Business App, not from the CRM. You can only have a maximum of one phone number under coexistence.",
+        "citation": [
+            {
+                "title": "WhatsApp Coexistence Feature - Closed Beta",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000003417"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002352"
+    },
+    {
+        "query": "I need to purchase 13 numbers as I assume every rep will need a number to get a call",
+        "answer": "To purchase 13 phone numbers, you can follow these steps:\n\n1. **Switch to the Sub-Account:**\n   - At the top left, click to switch to the sub-account where you want to purchase the phone numbers.\n\n2. **Access Settings:**\n   - Once in the sub-account, click on 'Settings'.\n\n3. **Navigate to Phone Numbers:**\n   - Click on 'Phone Numbers'.\n\n4. **Add Phone Numbers:**\n   - Click on 'Add Phone Number' under the 'Add Number' tab.\n\n5. **Select Country:**\n   - Choose the country for which you want to buy the numbers.\n\n6. **Choose and Purchase Numbers:**\n   - Select the numbers of your choice and click on 'Proceed to Buy' to purchase them.\n\nRepeat the process until you have purchased all 13 numbers needed for your representatives. Ensure that you have set up your agency telephony provider before proceeding with these steps.",
+        "citation": [
+            {
+                "title": "How to Purchase a Phone Number in a Sub-Account",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000003226"
+            },
+            {
+                "title": "How to Purchase a Phone Number in a Sub-Account",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48000981420"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48000981420"
+    },
+    {
+        "query": "zoom integration",
+        "answer": "1. **Overview of Zoom Integration**: The Zoom integration allows users to schedule, start, and manage Zoom meetings directly from within the CRM platform. This integration generates unique Zoom meeting links automatically for each new meeting scheduled, enhancing security and convenience.\n\n2. **Usage Cases**: The integration is beneficial for various scenarios such as team meetings, client consultations, webinars, virtual office hours, online fitness classes, virtual real estate showings, telemedicine appointments, and online cooking classes.\n\n3. **Benefits**: The integration offers automated meeting scheduling, centralized management, multi-user accessibility, calendar syncing, real-time updates, enhanced security, automated notifications, and data tracking.\n\n4. **Integration Prerequisites**: Users need to connect their Zoom account to their profile, and dynamic Zoom links are available only with Round Robin and Collective Calendars.\n\n5. **Integrating the Same Zoom Account with Multiple Users**: Zoom integration is tied to unique User IDs, not email addresses, which can cause issues if a user account is deleted and restored.\n\n6. **Installation Steps**: Users can install Zoom integration via User Profile, Default Meeting Location, or Calendar Settings. Admins can configure Zoom for other users using the \"Login As User\" feature.\n\n7. **Appointment Reminder Workflow**: Users can set up workflows to automate reminders for appointments with dynamic Zoom links included.",
+        "citation": [
+            {
+                "title": "Zoom Integration for Users' Calendar Bookings",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001179593"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000002372"
+    },
+    {
+        "query": "Client is not allowed to send emails due to too many failed emails",
+        "answer": "1. **Identify the Error:** The client is experiencing an issue where they are not allowed to send emails due to too many failed emails.\n\n2. **Understand the Cause:** This issue is likely due to a high error rate in email sending, which can be caused by various factors such as invalid email addresses, high bounce rates, or other sending errors.\n\n3. **Check Error Details:** Review the error messages provided by the email service (e.g., Mailgun) to understand the specific reasons for the failures. This can be done by checking the error logs or messages in the email service dashboard.\n\n4. **Verify Email Addresses:** Ensure that the email addresses being used are valid and correctly formatted. Invalid addresses can lead to high bounce rates and errors.\n\n5. **Enable Email Validation:** Consider enabling email validation to check the validity of email addresses before sending. This can help reduce the number of failed emails by ensuring that only valid addresses are used.\n\n6. **Review Sending Practices:** Evaluate the current email sending practices to ensure compliance with best practices, such as avoiding sending to large numbers of unverified addresses or using proper authentication methods.\n\n7. **Contact Support:** If the issue persists, contact the email service provider's support team for further assistance and to understand any specific restrictions or limitations that may be in place due to the high error rate.",
+        "citation": [
+            {
+                "title": "Email Error Library for supported SMTPs",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001209322"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001214786"
+    },
+    {
+        "query": "Mailgun is not integrate with sub account",
+        "answer": "To troubleshoot the issue of Mailgun not integrating with a sub-account, follow these steps:\n\n1. **Check Mailgun Receiving Route:**\n   - Ensure that the Mailgun Receiving Route is set up correctly. Log into Mailgun, go to the Receiving tab, and verify that the webhook matches the required configuration. If there are other webhooks that do not match, try removing them and see if it resolves the issue. If no webhook is present, create a new route with the correct settings.\n\n2. **Verify MX Records:**\n   - Check the MX records for the domain/subdomain associated with the sub-account. Use a tool like Mxtoolbox to verify that the MX records point to `mxa.mailgun.org` and `mxb.mailgun.org` with priority 10. If other records point to different email servers, you may need to set up a subdomain for Mailgun or not use the domain for other email services.\n\n3. **Ensure Correct Domain Configuration:**\n   - Make sure the Mailgun domain is configured for only one sub-account. If the same domain is configured for multiple sub-accounts, it can cause routing issues. Check the Agency View under Settings > Email Services > Location Settings to ensure the domain is mapped correctly.\n\n4. **Reset Mailgun API Key:**\n   - If necessary, reset the Mailgun API key. Go to Agency View > Settings > Email Services > Location Settings, edit the Mailgun API integration for the sub-account, type \"Delete,\" and then re-integrate the API key.\n\nFollowing these steps should help resolve the integration issue with Mailgun for the sub-account.",
+        "citation": [
+            {
+                "title": "Mailgun Setup Checklist",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001175336"
+            },
+            {
+                "title": "When email replies are not showing up in Conversation",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001185819"
+            },
+            {
+                "title": "How to setup Replies in MailGun",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48000987293"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48000981682"
+    },
+    {
+        "query": "I've added a new Email address (somename@somerealestateagency.com) and for some reason when I send emails the old email address (hello@somerealestateagency.com) is appearing to my recipients.",
+        "answer": "To resolve the issue of the old email address appearing to recipients instead of the new one, you need to set up an alias for your Gmail account. Here are the steps to do so:\n\n1. **Access Gmail Settings:**\n   - Log into your Gmail account that you have integrated with HighLevel.\n   - Click on the settings icon at the top right and select \"See all settings.\"\n\n2. **Add an Alias:**\n   - Go to the \"Accounts and Import\" tab.\n   - Click on \"Add another email address\" under the \"Send mail as\" section.\n   - Enter the new email address (somename@somerealestateagency.com) you want to use.\n   - Follow the prompts to verify the new email address.\n\n3. **Verification:**\n   - A verification email will be sent to the new email address.\n   - Retrieve the verification code from the email and enter it in the Gmail settings to complete the process.\n\nOnce the alias is set up and verified, you can send emails from the new email address, and it will appear as the sender to your recipients.",
+        "citation": [
+            {
+                "title": "Setting alias for Google smtp",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001184605"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001226115"
+    },
+    {
+        "query": "Dkim and SPF setup on customer domain",
+        "answer": "1. **DKIM and DMARC Requirement**: Starting February 2024, Gmail and Yahoo will require DKIM and DMARC authentication for emails. It is strongly recommended for all senders to set up DKIM and DMARC.\n\n2. **DMARC Overview**: DMARC (Domain-based Message Authentication Reporting and Conformance) is a tool that verifies emails by combining SPF and DKIM methods. It helps prevent email fraud like phishing and allows domain owners to specify how unauthorized use of their email domains should be managed through a policy in the DMARC record.\n\n3. **DMARC Record Setup**: A DMARC record is housed in a TXT-type DNS entry named _dmarc and outlines policies and preferences for email servers. It includes tags such as 'v' for DMARC version, 'p' for policy, 'adkim' for DKIM alignment mode, 'aspf' for SPF alignment mode, and others.\n\n4. **DMARC Policies**: The 'p' tag in a DMARC record specifies the action for emails failing DMARC checks. Options include 'none' (collects feedback without impacting existing flows), 'quarantine' (treats suspicious emails, often directing them to the spam folder), and 'reject' (rejects all failing emails outright).\n\n5. **Resolving DMARC Failures**: If emails are failing DMARC checks, it is advised to temporarily change the DMARC record policy to 'p=none' to ensure message delivery, even if DMARC fails. This change should be temporary.\n\n6. **Example Configurations**: Example configurations for DMARC include setting a quarantine policy with 50% verification for testing (`v=DMARC1; p=quarantine; pct=50;`) and later switching to a reject policy for full enforcement (`v=DMARC1; p=reject;`).",
+        "citation": [
+            {
+                "title": "Email Authentication - DMARC",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001224630"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001226115"
+    },
+    {
+        "query": "convert lead connector to twillio",
+        "answer": "To convert a LeadConnector account to a Twilio account, you need to follow these steps:\n\n1. **Create a Support Ticket with Twilio Support:**\n   - Use the subject \"Moving numbers request\" and provide the necessary details such as the phone numbers you wish to move, the losing sub-account SID, and the gaining sub-account SID.\n   - CC the email to migration@leadconnectorhq.com for approval.\n\n2. **Submit Your Request:**\n   - Ensure all details are filled out and submit the help request to Twilio.\n\n3. **Provide Location ID to Support:**\n   - Contact HighLevel support to get the ISV location's Twilio sub-account SID for the numbers you are moving.\n\nThese steps will help you move numbers from a LeadConnector sub-account to a Twilio account. Ensure you have all the necessary account SIDs and details ready for a smooth transition.",
+        "citation": [
+            {
+                "title": "Moving numbers out of an LC Phone Sub-account to the client's own Twilio account",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001240107"
+            },
+            {
+                "title": "Moving numbers to an LC Phone Sub-account from the client's own Twilio account",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001240108"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001240107"
+    },
+    {
+        "query": "I want to move my phone number from LC phone to Twilio.",
+        "answer": "To move your phone number from LC Phone to Twilio, follow these steps:\n\n1. **Create a Support Ticket with Twilio Support**: \n   - Use the subject \"Moving numbers request\".\n   - You can access Twilio Support [here](https://support.twilio.com/hc/en-us/articles/360048500694-Contacting-Twilio-Support).\n\n2. **Copy and Paste the Email Template**:\n   - CC: migration@leadconnectorhq.com to approve your request.\n   - Include the phone numbers you wish to move.\n   - Provide the Losing sub-account SID (contact HighLevel support to get the ISV location's Twilio sub-account SID where the number is currently in).\n   - Provide the Gaining sub-account SID (your own Twilio sub-account SID).\n   - Mention the time-frame as ASAP.\n\n3. **Submit Your Request**: \n   - Click on \"No\" at the bottom and then \"SUBMIT HELP REQUEST\".\n\nBy following these steps, you can initiate the process to move your phone number from LC Phone to your own Twilio account.",
+        "citation": [
+            {
+                "title": "Moving numbers out of an LC Phone Sub-account to the client's own Twilio account",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001240107"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001240107"
+    },
+    {
+        "query": "Email from subaccount is going into spam folder",
+        "answer": "1. **Check Domain Settings:** Ensure that the email is being sent from a domain that you own and that matches your branding. Sending from a public domain like gmail.com or yahoo.com can lead to emails going to spam.\n\n2. **Verify DMARC Settings:** If the domain used to send mail has a DMARC policy, ensure that it is verified with your SMTP provider. Unverified domains can cause emails to be marked as spam.\n\n3. **List Health:** Ensure that everyone on your email list has given direct consent to receive emails from you. Regularly clean your list to remove cold subscribers and secure your forms with double opt-in.\n\n4. **Content Quality:** Avoid using spammy keywords or formatting in your emails. Ensure that your email content is engaging and relevant to the recipients.\n\n5. **Sender Reputation:** Maintain a good sender reputation by monitoring engagement metrics such as open rates and click-through rates. High engagement signals to email providers that your content is valuable.\n\n6. **Email Validation:** Perform email validation to ensure that you are not sending emails to invalid addresses, which can harm your sender reputation and lead to emails being marked as spam.\n\nBy addressing these factors, you can improve email deliverability and reduce the chances of emails going to the spam folder.",
+        "citation": [
+            {
+                "title": "Email Sending Guide: Email Best Practices & Email Warm Up",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000001021"
+            },
+            {
+                "title": "Why Are My Emails Going To Spam?",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001063372"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/155000001021"
+    },
+    {
+        "query": "only a few email were sent of 1500 for two campaigns",
+        "answer": "1. **Check Email Statistics:** Review the email statistics to identify which emails were sent and which were not. This can help in understanding the extent of the issue and identifying any patterns or specific contacts that were not reached. \n\n2. **Email Bounce Suspension:** If there is a high bounce rate, email sending might be suspended. Ensure that your bounce rate is below the industry threshold of 5% to avoid suspension. If the bounce rate is high, validate your email list to remove invalid addresses.\n\n3. **Account Suspension:** If email sending is suspended due to high bounce rates, it will be temporarily blocked for 12 hours. To prevent future suspensions, enable email validation and follow best practices for email sending.\n\n4. **Troubleshooting:** If emails are not being sent, check the error messages from the SMTP server or Mailgun API. If the error is not clear, contact the SMTP provider for more detailed delivery status.\n\n5. **Re-sending Emails:** If some emails were not sent, export the email statistics, re-upload the contacts, and use a smart list to filter and resend to those who did not receive the email initially.",
+        "citation": [
+            {
+                "title": "How to send a test email in the Conversation",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001208887"
+            },
+            {
+                "title": "What is email Bounce Suspension, and how to avoid it",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001214786"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001220605"
+    },
+    {
+        "query": "I was checking on my automation and I found that many emails weren't sent because I \"hit my send limit\" I need to adjust this. ",
+        "answer": "To adjust the email sending limit, you need to consider the following steps:\n\n1. **Identify the Current Limit:**\n   - If you are using a Shared Domain, the limit is set to 15,000 emails per day.\n   - If you are using a Dedicated Domain, the limit is set to 450,000 emails per day.\n\n2. **Increase the Limit:**\n   - For Shared Domain, to increase the limit beyond 15,000, you must set up a Dedicated Sending Domain for the sub-account.\n   - For Dedicated Domain, to increase the limit beyond 450,000, you need to contact the support team.\n\n3. **Access the Settings:**\n   - Go to the sub-account detail page by navigating to \"Agency View\" > \"Sub-Accounts\" > Search and click on the Sub-Account Name and scroll down to the \"Additional Settings\" section to increase the limit.\n\nEnsure that the sub-account activity is validated and not a spam account before requesting an increase in the sending limit.",
+        "citation": [
+            {
+                "title": "What is LC Email?",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001220605"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48001220605"
+    },
+    {
+        "query": "I want to change my default sender domain for email in just one subaccount, I have mailgun connected to my HL so i need help ",
+        "answer": "To change the default sender domain for email in just one sub-account while using Mailgun in HighLevel, follow these steps:\n\n1. **Access Sub-Account Settings:**\n   - Navigate to the sub-account where you want to change the default sender domain.\n   - Go to **Settings** -> **Email Services**.\n\n2. **Open Dedicated Domain Settings:**\n   - In the Email Services section, click on the \"Dedicated Domain and IP\" button to view all your connected sending domains.\n\n3. **Select the New Default Domain:**\n   - Open the actions menu for your domain by clicking the three-dot button located in the top left corner of your domain.\n   - Choose the domain you want to set as the default for this sub-account.\n\n4. **Set as Default Provider:**\n   - Ensure that the desired subdomain is showing and defaulted as the Default Provider in the sub-account settings.\n\nBy following these steps, you can change the default sender domain for emails in a specific sub-account while using Mailgun in HighLevel. This allows you to manage email sending domains on a per sub-account basis, ensuring that each sub-account can have its own dedicated domain if needed.",
+        "citation": [
+            {
+                "title": "Deleting Your LC Email Sending Domain",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000003212"
+            },
+            {
+                "title": "What will be the order of Email Provider we will use to send emails?",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/48001209681"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48000981682"
+    },
+    {
+        "query": "conect twilio phone",
+        "answer": "To connect a Twilio phone number to a WhatsApp Business Account using LeadConnector, follow these steps:\n\n1. **Purchase a Phone Number:**\n   - Go to **Phone Numbers** > Click **Add Number** > Select the number and proceed to buy.\n\n2. **Set Up Call Forwarding:**\n   - Set up call forwarding to your number. This is especially required if the phone number you bought only has voice capabilities, as Meta will send an OTP during WhatsApp registration.\n\n3. **WhatsApp Setup:**\n   - Go to Settings > WhatsApp > Buy WhatsApp.\n   - Click on **Signup with Facebook**.\n   - Log in to your Facebook account.\n   - Click on **Get Started**.\n   - Fill in your business information, select Business Portfolio, enter Business Name, add a website or profile page, and select Country.\n\n4. **Create WhatsApp Business Account:**\n   - Create or select your WhatsApp Business account.\n   - Create a WhatsApp business profile by entering the WhatsApp business account name, display name, and category.\n\n5. **Enter Phone Number:**\n   - Enter the LC/Twilio Phone Number.\n   - Select Verification as Phone if your number only has calling capabilities and ensure call forwarding is enabled. If your number has SMS capabilities, choose SMS.\n\n6. **Verification:**\n   - Enter the code received on call/SMS.\n\n7. **Review Permissions:**\n   - Review permissions to complete the setup.\n\n8. **Integration Complete:**\n   - The WhatsApp integration is complete, and you are ready to chat with people on WhatsApp.",
+        "citation": [
+            {
+                "title": "How to use LeadConnector/Twilio phone number for WhatsApp Business Account",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002352"
+            }
+        ],
+        "eval_url": "https://help.gohighlevel.com/support/solutions/articles/48000981421"
+    },
+    {
+        "query": "there is no validate email button on one of my subaccounts",
+        "answer": "To resolve the issue of the missing \"Validate Email\" button on one of your sub-accounts, you can follow these steps:\n\n1. **Filter Sub-Accounts by Email Verification Status**:\n   - Navigate to Agency Settings -> Email Services -> Location Settings.\n   - Use the \"Filter\" button to check the email verification status of your sub-accounts. Ensure that the email verification is enabled for the sub-account in question.\n\n2. **Enable Email Verification**:\n   - If the email verification is not enabled, you can enable it by selecting the sub-account and ensuring that the email verification toggle is turned on.\n\nThese steps should help you manage and enable the email verification feature for your sub-account, ensuring that the \"Validate Email\" button appears as expected.",
+        "citation": [
+            {
+                "title": "Introducing Enhanced Sub-Account Filtering: Manage Email Providers with Ease!",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000000331"
+            },
+            {
+                "title": "Manage Sub-account Email Settings and Migration in LC Email",
+                "url": "https://help.gohighlevel.com/support/solutions/articles/155000002222"
+            }
+        ],
+        "eval_url": "https://help.leadconnectorhq.com/en/support/solutions/articles/155000000623-how-to-enable-lc-email-validation"
+    }
+]

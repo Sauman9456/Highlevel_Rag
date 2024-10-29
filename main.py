@@ -13,8 +13,9 @@ from openai import OpenAI
 from fastapi import FastAPI
 from typing import List, Dict
 
-os.environ["OPENAI_API_KEY"] = ""
-os.environ["COHERE_API_KEY"] = ""
+
+os.environ["OPENAI_API_KEY"] = os.environ.get("OPENAI_API_KEY", "")
+os.environ["COHERE_API_KEY"] = os.environ.get("COHERE_API_KEY", "")
 
 def load_vector_store_docs(persist_directory, embedding_model):
   vector_store = load_chroma(
