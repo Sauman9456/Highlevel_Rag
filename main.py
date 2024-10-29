@@ -221,7 +221,6 @@ INSTRUCTIONS:
 4. Keep your answer concise with all required and requested details and solely on the information given in the document.
 5. Always provide the answer with all relevant citations at the end of the answer, ensuring that each citation includes the corresponding document number used to create the answer. Provide the citation in the form of python list at the end of the whole answer not in between the answer.
 7. Do not create or derive your own answer. If the answer is not directly available in the documents, just reply stating, 'There is no answer available', in case of no answer, citation will be empty list '[]'
-8. Note: When providing an answer, reference only the minimum number of documents necessary. Treat each document as complete and independent, prioritizing the most relevant one that directly addresses the query. If multiple documents contain similar or duplicate content, cite only the most appropriate document for the answer.
 """
   response = client.chat.completions.create(
       model="gpt-4o",
@@ -299,4 +298,3 @@ async def get_answer(data: InputData):
 
 
     return ResponseData(answer=answer, citation=citation)
-
