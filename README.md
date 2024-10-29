@@ -103,3 +103,41 @@ curl -X 'POST' \
 ## Testing and Evaluation
 
 To evaluate the RAG model's performance, a Jupyter Notebook `ragas_testing.ipynb` is provided, which includes scripts to assess the quality of the responses. Refer to the **`eval_dict.json`** to get response against the given questions
+
+
+
+## Why This Approach?
+
+### Challenges Observed with User Queries
+User queries often contain a mixture of specific keywords (e.g., “LC,” “Twilio”) and longer, detailed phrasing. Initial attempts using a standard vector search led to desired documents appearing in the 50th to 70th positions, indicating a need for enhanced retrieval techniques.
+
+1. **Hybrid Search (Vector + Keyword Search)**:
+   - A hybrid approach was selected to leverage both semantic relevance (via vector search) and exact term matching (via keyword search).
+   - However, even with re-ranking, the retrieval results only slightly improved, with relevant documents moving to the 40th-50th positions.
+
+2. **Query Augmentation**:
+   - Upon analysis, it was evident that many user queries were incomplete or ambiguous. I used GPT-4o to generate alternative queries based on document metadata (e.g., section headers) to supplement the initial query, hoping to cover more nuanced domain-specific terms.
+   - Although query augmentation did help, it did not lead to significant improvements in document ranking alone.
+
+3. **Incorporating Domain-Specific Knowledge**:
+   - Through further testing, it became clear that domain-specific terminology was impacting retrieval effectiveness. To address this, I added document indexes (from headers marked by `#`) to metadata in the vector database.
+   - The similarity search retrieves the top 150 documents, and the combined indexes provide domain-specific context to the GPT-4o model, aiding in the generation of alternative queries tailored to the domain.
+   - This strategy reduced the appearance of desired documents to the top 15 positions in 93.5% of cases and the top 10 positions in 87% of cases, enhancing retrieval precision.
+
+4. **Generating the Final Response**:
+   - With the updated pipeline, the top 15 documents are passed to GPT-4o for response generation, yielding well-referenced answers that cite sources. 
+
+
+## Future Improvements
+
+1. **Enhanced Summarization**:
+   - To handle more documents within the RAG pipeline, I plan to add enhanced summaries that distill essential information, improving document relevance and response generation.
+
+2. **Domain-Specific Query Augmentation**:
+   - Further analysis on query-specific patterns could enhance the query augmentation step, producing more precise alternative queries for each user query.
+
+3. **Expanded Document Filtering**:
+   - Instead of limiting to the top 15 documents, using summarization as an additional filtering mechanism can increase response accuracy, helping the LLM to generate higher-quality answers.
+
+4. **Semantic Routing for Optimized Document Selection**:
+   - Pre-processing documents to classify them based on themes (e.g., setup, troubleshooting, A2P campaigns) and classifying user queries dynamically can act as an additional filter in the RAG pipeline, narrowing down documents to contextually relevant ones.
