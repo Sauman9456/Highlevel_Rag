@@ -14,6 +14,7 @@ from fastapi import FastAPI
 from typing import List, Dict
 
 
+# Set environment variables for API keys
 os.environ["OPENAI_API_KEY"] = os.environ.get("OPENAI_API_KEY", "")
 os.environ["COHERE_API_KEY"] = os.environ.get("COHERE_API_KEY", "")
 
@@ -23,6 +24,17 @@ def load_vector_store_docs(persist_directory, embedding_model):
       persist_directory = persist_directory
 
   )
+  """
+    Load vector store and return vector store and documents.
+    
+    Args:
+        persist_directory (str): Directory where the vector store is persisted.
+        embedding_model: Embedding model used for vectorization.
+    
+    Returns:
+        tuple: Vector store and list of documents.
+    """
+  
   vectorstore_data = vector_store.get()
   docs = []
   for content, metadata in zip(vectorstore_data['documents'], vectorstore_data['metadatas']):
@@ -31,7 +43,17 @@ def load_vector_store_docs(persist_directory, embedding_model):
 
 
 def get_retriver(persist_directory, embedding_model, top = 20):
-  global docs
+  """
+    Initialize and return retrievers, including a compression retriever.
+    
+    Args:
+        persist_directory (str): Directory where vector store is stored.
+        embedding_model: Embedding model for vectorization.
+        top (int, optional): Number of top documents to retrieve. Default is 20.
+    
+    Returns:
+        tuple: Compression retriever and vector store retriever.
+    """
   vectorstore, docs = load_vector_store_docs(persist_directory, embedding_model)
 
   vectorstore_retreiver = vectorstore.as_retriever(search_kwargs={"k": int(top)})
@@ -57,6 +79,18 @@ class Alternate_Questions(BaseModel):
     questions: List = Field(description="List of alternate questions")
 
 def get_alternate_questions(question, titles):
+  """
+    Generate alternate questions based on the given question and document titles.
+
+    Args:
+        question (str): Original question.
+        titles (str): Titles of documents for context.
+
+    Returns:
+        list: List of original and alternate questions.
+    """
+  
+
   client = instructor.from_openai(OpenAI())
   system_prompt = f"""You are an AI language model assistant. Your task is to generate three different versions of the given user question to retrieve relevant documents from a vector database.
 By generating multiple perspectives on the user question, your goal is to help the user overcome some of the limitations of the distance-based similarity search and keyword search.
@@ -97,6 +131,18 @@ Alternate Questions:
 
 
 def get_retrive_doc(query, index_retiver, compress_retriever):
+  """
+    Retrieve documents based on query, returning relevant documents and queries.
+
+    Args:
+        query (str): User query.
+        index_retriever: Retriever for creating domain knwolege from indexes.
+        compress_retriever: Retriever for Advance rag and re-ranking compression.
+
+    Returns:
+        tuple: Retrieved documents and all queries.
+    """
+  
   retrive_doc = []
   check_unique_url = []
   index_docs =  index_retiver.invoke(query)
@@ -120,13 +166,13 @@ def get_retrive_doc(query, index_retiver, compress_retriever):
           if retrive_doc[i].metadata['url'] == doc.metadata['url']:
             if retrive_doc[i].metadata['relevance_score'] < doc.metadata['relevance_score']:
               retrive_doc[i].metadata['relevance_score']  = doc.metadata['relevance_score']
-            if retrive_doc[i].page_content != doc.page_content:
+            if retrive_doc[i].page_content != doc.page_content: #Same document but different chunk
               retrive_doc[i].page_content = retrive_doc[i].page_content + doc.page_content
               retrive_doc[i].metadata['section_summary'] = retrive_doc[i].metadata['section_summary'] + doc.metadata['section_summary']
-              retrive_doc[i].metadata['relevance_score'] = retrive_doc[i].metadata['relevance_score'] + 0.1
+              retrive_doc[i].metadata['relevance_score'] = retrive_doc[i].metadata['relevance_score'] + 0.1 #increasing score by 10%
 
   retrive_doc = sorted(retrive_doc, key=lambda doc: doc.metadata['relevance_score'], reverse=True)
-  retrive_doc = retrive_doc[:14]
+  retrive_doc = retrive_doc[:14] # selecting top 15 based on score
   return retrive_doc, all_query
 
 class AnswerCitation(BaseModel):
@@ -138,6 +184,17 @@ class AnswerCitation(BaseModel):
     answer: str = Field(description="Only include Answer, do not include any citations in this, that is python list. In case of no answer, answer = 'There is no answer available'")
 
 def qet_ans(queries, docs):
+  """
+    Generate answer from retrieved documents.
+
+    Args:
+        query (list): List of alternate queries.
+        docs (list): Retrieved documents.
+
+    Returns:
+        tuple: Answer text and citations.
+    """
+  
   alternate_queries = "\n".join(f"{index + 1}. {item}" for index, item in enumerate(queries[1:]))
   
   context_str = "\n\n\n\n".join(
@@ -179,6 +236,18 @@ INSTRUCTIONS:
 
 
 def rag_execution(query, index_retiver, compress_retriever):
+  """
+    Execute the retrieval and answer generation process.
+    
+    Args:
+        query (str): User query.
+        index_retriever: Index retriever instance.
+        compress_retriever: Compression retriever instance.
+    
+    Returns:
+        tuple: Answer text and citations.
+    """
+  
   retrive_docs, all_query = get_retrive_doc(query, index_retiver, compress_retriever)
   ans, citation = qet_ans(all_query, retrive_docs)
   actual_citation = []
@@ -214,6 +283,16 @@ class ResponseData(BaseModel):
 
 @app.post("/get_answer")
 async def get_answer(data: InputData):
+    """
+    Endpoint to get answer and citations for a given query.
+
+    Args:
+        data (InputData): User query data.
+
+    Returns:
+        ResponseData: Answer and citations.
+    """
+    
     query = data.input_text
 
     answer, citation =  rag_execution(query, index_retiver, compress_retriever)

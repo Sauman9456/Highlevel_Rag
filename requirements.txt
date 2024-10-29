@@ -12,4 +12,3 @@ langchain-cohere
 instructor
 fastapi
 uvicorn
-ragas==0.1.21
