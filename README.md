@@ -144,3 +144,6 @@ User queries often contain a mixture of specific keywords (e.g., “LC,” “Tw
      
 5. **Enriching Documents with Vision Capabilities**:
    - Implementing methods like **[ColPali](https://huggingface.co/blog/manu/colpali)**, **video transcript extraction**, and **image embedding** can add visual understanding to the pipeline. Since many support articles contain images and videos, incorporating these vision-based elements will provide a richer, multi-modal document representation, significantly boosting retrieval performance and ensuring more accurate responses for visually-dependent support content.
+
+6. **Parallelized Advanced RAG**:
+   - The current advanced RAG process, which combines hybrid retrieval with re-ranking for each augmented query, can be sped up by implementing **parallelization**. Running this in parallel for queries rather than sequentially could lead to a **2x to 3x speed improvement**, greatly enhancing response times. 
